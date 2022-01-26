@@ -72,7 +72,7 @@
 					<?php if ( 'container' == $container ) : ?>
 					</div><!-- .container -->
 					<?php endif; ?>
-
+					<a href="#"><button class="blue button">BUCHEN</button></a>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->
