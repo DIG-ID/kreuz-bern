@@ -1,4 +1,13 @@
-<?php 
+<?php
+wp_enqueue_style( 'slider', get_template_directory_uri() . '/style.css',false,'1.1','all');
+
+function nd_dosth_theme_setup() {
+
+        // Adds <title> tag support
+        add_theme_support( 'title-tag' );
+
+}
+add_action( 'after_setup_theme', 'nd_dosth_theme_setup');
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
 
