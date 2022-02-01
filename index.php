@@ -1,5 +1,5 @@
-<?php 
+<?php
 
 ?>
 
-<p> Hello dig.id!</p>
+<p> Hello dig.id! Edit Daniel</p>
