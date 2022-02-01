@@ -12228,7 +12228,7 @@ body {
   margin: 10px 10px;
 }
 .navbar .menu-item > a {
-  font-family: "SectraBook";
+  font-family: "SectraBook", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;

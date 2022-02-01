@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div id="primary" class="content-area">
 	<section class="home-banner">
-		<video id="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
+		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 			<source src="<?php echo the_field( 'video_link' ); ?>" type="video/mp4">  
 		</video>
 </section>
