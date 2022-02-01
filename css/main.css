@@ -27,6 +27,10 @@ body {
   background-color: #ffffff !important;
 }
 
+.float__right {
+  float: right;
+}
+
 /*main menu*/
 .navbar {
   padding-left: 60px;
@@ -83,4 +87,18 @@ header {
 
 #home__video--header {
   width: 100%;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main__section {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sidebar {
+  padding: 60px 0 30px 15px;
 }
