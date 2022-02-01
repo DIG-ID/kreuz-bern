@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-<script src="/wp-content/themes/kreuz-bern/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() . '/bootstrap/js/bootstrap.min.js' ?>"></script>
 </body>
 
 </html>

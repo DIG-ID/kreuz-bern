@@ -3,7 +3,7 @@
 <div id="primary" class="content-area">
   <header>
     <video id="home__video--header" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
-      <source src="/wp-content/uploads/2022/01/KREUZ_BERN_WEB_720.mp4" type="video/mp4">
+      <source src="<?php echo the_field('video_link'); ?>" type="video/mp4">  
     </video>
   </header>
   <main id="main" class="site-main" role="main">
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-1 sidebar float__right">
-            
+
           </div>
         </div>
       </div>
