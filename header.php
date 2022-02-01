@@ -30,10 +30,6 @@
 
 				<nav class="navbar navbar-expand-md navbar-dark bg-primary">
 
-				<?php if ( 'container' == $container ) : ?>
-					<div class="container">
-				<?php endif; ?>
-
 							<!-- Your site title as branding in the menu -->
 							<?php if ( ! has_custom_logo() ) { ?>
 
@@ -69,9 +65,6 @@
 								'walker'          => '',
 							)
 						); ?>
-					<?php if ( 'container' == $container ) : ?>
-					</div><!-- .container -->
-					<?php endif; ?>
 					<a href="#"><button class="blue button">BUCHEN</button></a>
 				</nav><!-- .site-navigation -->
 

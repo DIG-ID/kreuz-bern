@@ -1,0 +1,104 @@
+/*FONTS*/
+@font-face {
+  font-family: "SectraBook";
+  src: url(./fonts/GT-Sectra-Fine-Bold.eot?6a4317e0ee39354b9de0d39a1299b846) format("eot"), url(./fonts/GT-Sectra-Fine-Bold.otf?6831b8aaaca568b932d883fb0ddeac69) format("opentype"), url(./fonts/GT-Sectra-Fine-Bold.ttf?1803ef4e00e4f1af09d4be09a8b809c5) format("truetype"), url(./fonts/GT-Sectra-Fine-Bold.woff?89ef3eee98a6c0548b4ba0ce23f6a10c) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WalsheimThin";
+  src: url(./fonts/GT-Walsheim-Thin.eot?b0bec1caa407d31cb5e3b35a45db889b) format("eot"), url(./fonts/GT-Walsheim-Thin.otf?138f0bcaee9e7e6480027733bf679041) format("opentype"), url(./fonts/GT-Walsheim-Thin.ttf?b02366b47701e44d54dafeb07ebb9df3) format("truetype"), url(./fonts/GT-Walsheim-Thin.woff?0e92d8cdfbaa134576bfc04d5fee6cc0) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "navarrowsfont";
+  src: url(./fonts/navarrowsfont.eot?62193df19b3af061081e3cbd52a186a0);
+  src: url(./fonts/navarrowsfont.eot?62193df19b3af061081e3cbd52a186a0) format("embedded-opentype"), url(./fonts/navarrowsfont.ttf?b5ff9d9e7bc42da2abb55e098f62cfd3) format("truetype"), url(./fonts/navarrowsfont.woff?8b442bbc2f236698aaf58b5d83f420cb) format("woff"), url(./fonts/navarrowsfont.svg?b64b380077c1742f7bf9e3d6034fe923) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*LAYOUT STYLES*/
+body {
+  background-color: #ebf0f0;
+}
+
+.bg-primary {
+  background-color: #ffffff !important;
+}
+
+.float__right {
+  float: right;
+}
+
+/*main menu*/
+.navbar {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.navbar-expand-md .navbar-collapse {
+  justify-content: center;
+}
+
+a.custom-logo-link > img {
+  width: 128px;
+  height: auto;
+}
+
+.menu-item {
+  margin: 10px 10px;
+}
+
+.menu-item > a {
+  font-family: "SectraBook";
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button {
+  padding: 5px 30px;
+  font-family: WalsheimThin;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button.blue {
+  color: #ffffff;
+  background-color: #263a54;
+  border: 1px solid #263a54;
+}
+
+/*homepage*/
+header {
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #ffffff;
+}
+
+#home__video--header {
+  width: 100%;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main__section {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sidebar {
+  padding: 60px 0 30px 15px;
+}
+
+/*# sourceMappingURL=main.css.map*/
