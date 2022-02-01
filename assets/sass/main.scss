@@ -7,6 +7,8 @@
 /* FANCYBOX */
 @import "~@fancyapps/fancybox";
 
+@import "variables";
+@import "typography";
 @import "base"; // resets, variables, mixins, utility classes
-@import "components"; // anything reusable
-@import "layout"; // layout structure -> menus, grid
+@import "_components/components"; // anything reusable
+@import "_layout/layout"; // layout structure -> menus, grid

@@ -25,6 +25,7 @@
   "homepage": "https://github.com/DIG-ID/kreuz-bern#readme",
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "@popperjs/core": "^2.11.2",
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.3.0",
     "cross-env": "^7.0.3",
