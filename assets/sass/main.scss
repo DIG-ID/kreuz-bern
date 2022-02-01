@@ -1,3 +1,12 @@
+/* BOOTSTRAP 4 */
+@import "~bootstrap/scss/bootstrap";
+
+/* SWIPER */
+@import "~swiper/swiper-bundle.min.css";
+
+/* FANCYBOX */
+@import "~@fancyapps/fancybox";
+
 @import "base"; // resets, variables, mixins, utility classes
 @import "components"; // anything reusable
 @import "layout"; // layout structure -> menus, grid
