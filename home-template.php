@@ -2,7 +2,9 @@
 <?php get_header(); ?>
 <div id="primary" class="content-area">
   <header>
-    
+    <video id="home__video--header" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
+      <source src="/wp-content/uploads/2022/01/KREUZ_BERN_WEB_720.mp4" type="video/mp4">
+    </video>
   </header>
   <main id="main" class="site-main" role="main">
     <?php

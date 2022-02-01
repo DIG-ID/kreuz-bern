@@ -73,3 +73,14 @@ a.custom-logo-link > img {
   background-color: #263a54;
   border: 1px solid #263a54;
 }
+
+/*homepage*/
+header {
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #ffffff;
+}
+
+#home__video--header {
+  width: 100%;
+}
