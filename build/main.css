@@ -12199,11 +12199,10 @@ body.compensate-for-scrollbar {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
-
-.button .blue {
+.button__blue {
   color: #ffffff;
-  background-color: #263a54;
-  border: 1px solid #263a54;
+  background-color: #263A54;
+  border: 1px solid #263A54;
 }
 
 /*LAYOUT STYLES*/
