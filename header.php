@@ -64,7 +64,7 @@
 								'walker'          => '',
 							)
 						); ?>
-					<a href="#"><button class="button__blue">BUCHEN</button></a>
+					<a href="#"><button class="button button__blue">BUCHEN</button></a>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->
