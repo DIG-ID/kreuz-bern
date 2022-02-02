@@ -2,6 +2,7 @@
 
 add_action( 'after_setup_theme', 'kreuzbern_setup' );
 
+// Setup theme
 function kreuzbern_setup() {
 
 	register_nav_menus(
@@ -16,11 +17,21 @@ function kreuzbern_setup() {
 
 	add_theme_support( 'title-tag' );
 
+	add_theme_support( 'post-thumbnails' );
+
+	add_theme_support( 'wp-block-styles' );
+
+	add_theme_support( 'widgets-block-editor' );
+
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+
+
 }
 
-
+// Enqueue styles and scripts
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
 function theme_enqueue_styles() {
 
 	// Get the theme data
@@ -33,8 +44,9 @@ function theme_enqueue_styles() {
 }
 
 // Register ustom theme sidebar.
+add_action( 'widgets_init', 'kreuzbern_register_sidebars' );
 function kreuzbern_register_sidebars() {
-	/* Register the 'primary' sidebar. */
+	/* Register the 'footer' sidebar. */
 	register_sidebar(
 		array(
 			'id'            => 'footer-widgets',
@@ -48,4 +60,9 @@ function kreuzbern_register_sidebars() {
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-add_action( 'widgets_init', 'kreuzbern_register_sidebars' );
+
+// Theme otimizations.
+require get_template_directory() . '/inc/theme-optimizations.php';
+
+// Theme customizer options.
+require get_template_directory() . '/inc/customizer.php';
