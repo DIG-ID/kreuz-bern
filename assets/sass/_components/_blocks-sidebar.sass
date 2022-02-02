@@ -1,0 +1,59 @@
+.block
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 300px
+  padding: 30px
+  margin-bottom: 30px
+  background-color: #fff
+  &__title
+    font-family: $titles-font
+    font-size: 22px
+    font-weight: normal
+    line-height: 27px
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: #000
+    hyphens: none
+    -webkit-font-smoothing: antialiased
+    margin-bottom: 10px
+  &__text
+    flex-grow: 2
+    color: #000
+    margin: 0
+    padding: 0
+    font-family: $primary-font
+    line-height: 23px
+    font-size: 13.6px
+    letter-spacing: 0.05em
+    hyphens: auto
+    -webkit-font-smoothing: antialiased
+  &__btn
+    display: block
+    width: 100%
+    padding: 4px 0px
+    border: 1px solid $primary-color
+    font-family: $primary-font
+    font-size: 13.6px
+    line-height: 20px
+    letter-spacing: 0.075em
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    color: $primary-color
+    &:hover
+      background-color: $primary-color
+      color: #fff
+
+.block-inverted
+  background-color: $primary-color
+  .block__title
+    color: #fff
+  .block__text
+    color: #fff
+  .block__btn
+    border-color: #fff
+    color: #fff
+    &:hover
+      background-color: #fff
+      color: $primary-color

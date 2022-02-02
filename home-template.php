@@ -5,7 +5,7 @@
 		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 			<source src="<?php echo the_field( 'video_link' ); ?>" type="video/mp4">  
 		</video>
-</section>
+	</section>
 	<main id="main" class="site-main" role="main">
 		<?php
 		// Start the loop.
@@ -14,12 +14,11 @@
 			get_template_part( 'template-parts/content', 'page' );
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) {
-											comments_template();
+			comments_template();
 			}
 			// End of the loop.
 		endwhile;
 		?>
-
 		<section>
 			<div class="container">
 				<div class="row">
@@ -36,6 +35,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-1 sidebar float__right">
+						<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 						<div class="block">
 							<h3 class="block__title"> Card Title</h3>
 							<p class="block__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis consequatur expedita.</p>
@@ -47,8 +47,8 @@
 							<a class="block__btn" href="">card button</a>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div><!-- .row -->
+			</div><!-- .container -->
 		</section>
 
 	</main><!-- .site-main -->
