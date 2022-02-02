@@ -12256,6 +12256,31 @@ a.custom-logo-link > img {
   width: 100%;
 }
 
+#footer-wrapper {
+  background: #263A54;
+  padding: 3% 0;
+}
+#footer-wrapper .widget {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.075em;
+  font-family: "WalsheimThin", sans-serif;
+  margin-bottom: 30px;
+}
+#footer-wrapper .widget .menu {
+  padding: 0;
+  margin: 0;
+}
+#footer-wrapper .widget .menu .menu-item {
+  list-style-type: none;
+}
+#footer-wrapper .widget .menu .menu-item a {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+}
+
 main {
   max-width: 1280px;
   margin: 0 auto;

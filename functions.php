@@ -31,3 +31,21 @@ function theme_enqueue_styles() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array(), $theme_version, true );
 }
+
+// Register ustom theme sidebar.
+function kreuzbern_register_sidebars() {
+	/* Register the 'primary' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-widgets',
+			'name'          => __( 'Footer Widgets' ),
+			'description'   => __( 'Widgets that appears on the footer of the website.' ),
+			'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
+}
+add_action( 'widgets_init', 'kreuzbern_register_sidebars' );

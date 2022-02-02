@@ -4,27 +4,22 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package keno
+ * @package kreuzbern
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-<div class="wrapper" id="wrapper-footer">
+
+<footer id="footer-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<footer class="site-footer" id="colophon">
-					<div class="site-info">
-
-					</div><!-- .site-info -->
-				</footer><!-- #colophon -->
-			</div><!--col end -->
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
 		</div><!-- row end -->
 	</div><!-- container end -->
-</div><!-- wrapper end -->
+</footer><!-- wrapper end -->
+
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
