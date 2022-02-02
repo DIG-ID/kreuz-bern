@@ -36,7 +36,16 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-1 sidebar float__right">
-
+						<div class="block">
+							<h3 class="block__title"> Card Title</h3>
+							<p class="block__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis consequatur expedita.</p>
+							<a class="block__btn" href="">card button</a>
+						</div>
+						<div class="block block-inverted">
+							<h3 class="block__title"> Card Title</h3>
+							<p class="block__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis consequatur expedita.</p>
+							<a class="block__btn" href="">card button</a>
+						</div>
 					</div>
 				</div>
 			</div>
