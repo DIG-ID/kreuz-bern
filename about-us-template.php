@@ -39,7 +39,7 @@ get_header();
 						</div>
 					</section><!-- #main-content__wrapper -->
 				</div>
-				<aside id="main-sidebar" class="col-md-3 col-sm-4 col-xs-12 ps-4">
+				<aside id="main-sidebar" class="col-md-3 col-sm-4 col-xs-12">
 					<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 				</aside><!-- #main-sidebar -->
 			</div><!-- .row -->

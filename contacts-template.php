@@ -37,7 +37,7 @@ get_header();
 						</div>
 					</section><!-- #main-section__wrapper -->
 				</div>
-				<aside id="main-sidebar" class="col-md-3 col-sm-4 col-xs-12 ps-4">
+				<aside id="main-sidebar" class="col-md-3 col-sm-4 col-xs-12">
 					<div class="block block-inverted">
 						<h3 class="block__title"><?php the_field( 'contact_block_title' ); ?></h3>
 						<p class="block__text"><?php the_field( 'contact_block_content' ); ?></p>
