@@ -6,12 +6,7 @@
  */
 
 get_header();
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 ?>
-
 <div id="primary" class="content-area">
 	<section class="home-banner">
 		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
