@@ -52,7 +52,8 @@
 						</button>
 
 						<!-- The WordPress Menu goes here -->
-						<?php wp_nav_menu(
+						<?php
+						wp_nav_menu(
 							array(
 								'theme_location'  => 'primary',
 								'container_class' => 'collapse navbar-collapse',
@@ -63,7 +64,8 @@
 								'depth'           => 2,
 								'walker'          => '',
 							)
-						); ?>
+						);
+						?>
 					<a href="#"><button class="button button__blue">BUCHEN</button></a>
 				</nav><!-- .site-navigation -->
 
