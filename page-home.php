@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Kreuz-homepage-template
+ * Template Name: Home Page Template
  *
  * The template for displaying all content of the homepage
  */

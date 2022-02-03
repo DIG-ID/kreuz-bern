@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contacts Template
+ * Template Name: Contacts Page Template
  *
  * The template for displaying all contact page
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Attractions Template
+ * Template Name: Attractions Page Template
  *
  * The template for displaying attractions archive posts
  */

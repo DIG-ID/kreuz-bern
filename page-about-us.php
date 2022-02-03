@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Us Template
+ * Template Name: About Us Page Template
  *
  * The template for displaying all about us page
  */
