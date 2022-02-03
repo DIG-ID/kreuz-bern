@@ -11,6 +11,7 @@ get_header(); ?>
 		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 			<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
 		</video>
+		<div id="sb-container"></div>
 	</section>
 	<main id="main" class="site-main" role="main">
 		<div class="container">
