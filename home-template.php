@@ -66,6 +66,7 @@
 									</div>
 								</div>
 							</div>
+						</div>
 					</div>
 					<div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-1 sidebar float__right">
 						<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
