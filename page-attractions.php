@@ -10,6 +10,9 @@ get_header();
 $args      = array(
 	'posts_per_page' => 4,
 	'post_type'      => 'attractions',
+	'nopaging'       => true,
+	'order'          => 'ASC',
+	'orderby'        => 'date',
 );
 $the_query = new WP_Query( $args );
 ?>
@@ -30,14 +33,12 @@ $the_query = new WP_Query( $args );
 												<?php if ( get_field( 'banner_check' ) ) : ?>
 													<span class="block-image__badge"><?php the_field( 'banner_content' ); ?></span>
 												<?php endif; ?>
-												<a href="<?php the_field( 'details_button_link' ); ?>">
-													<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
-												</a>
+												<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
 												<div class="block-image__content">
 													<h2 class="block-image__title"><?php the_field( 'title' ); ?></h2>
 													<span class="block-image__subtitle" ><?php the_field( 'subtitle' ); ?></span>
 													<p class="block-image__text"><?php the_field( 'description' ); ?></p>
-													<a class="block-image__btn" href="<?php the_field( 'details_button_link' ); ?>"><?php the_field( 'details_button' ); ?></a>
+													<a class="block-image__btn" href="<?php the_field( 'details_button_link' ); ?>" target="_blank"><?php the_field( 'details_button' ); ?></a>
 												</div>
 											</article><!-- .block-image -->
 										</div><!-- .col -->

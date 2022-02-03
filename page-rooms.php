@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div id="main-content" class="col-md-9 col-sm-9 col-xs-12">
-					<section id="main-content__wrapper" class="main__section--wrapper">
+					<section id="main-content__wrapper">
 						<div class="row">
 							<?php
 							$rooms_query_args = array(
@@ -46,10 +46,8 @@ get_header(); ?>
 											<p class="main-block__title"><?php the_field( 'title' ); ?></p>
 											<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
 											<div class="main-block__btn-wrapper">
-												<a href="<?php the_permalink(); ?>">
-													<button class="main-block__btn button button__white">Details</button></a>
-												<a href="<?php the_field( 'book_button_link' ); ?>">
-													<button class="main-block__btn button button__blue"><?php the_field( 'book_button' ); ?></button></a>
+												<a href="<?php the_permalink(); ?>"><button class="main-block__btn button button__white"><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></button></a>
+												<a href="<?php the_field( 'book_button_link' ); ?>"><button class="main-block__btn button button__blue"><?php the_field( 'book_button' ); ?></button></a>
 											</div>
 										</div>
 									</div>

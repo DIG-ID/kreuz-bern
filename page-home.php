@@ -17,7 +17,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div id="main-content" class="col-md-9 col-sm-9 col-xs-12">
-					<section id="main-content__wrapper" class="main__section--wrapper">
+					<section id="main-content__wrapper">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--1">
