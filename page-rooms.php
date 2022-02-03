@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Template Name: Rooms Page Template
  *
@@ -20,13 +20,13 @@ get_header(); ?>
 								'order'     => 'ASC',
 								'orderby'   => 'date',
 							);
-							$rooms_query      = new WP_Query( $rooms_query_args );
+							$rooms_query = new WP_Query( $rooms_query_args );
 							if ( $rooms_query->have_posts() ) :
 								while ( $rooms_query->have_posts() ) :
 									$rooms_query->the_post();
 									?>
 									<div class="col-md-6">
-										<div class="main-block" id="home__box--1">
+										<div class="main-block">
 											<?php
 											$room_sliders = get_field( 'gallery_slider' );
 											if ( $room_sliders ) :
@@ -46,8 +46,10 @@ get_header(); ?>
 											<p class="main-block__title"><?php the_field( 'title' ); ?></p>
 											<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
 											<div class="main-block__btn-wrapper">
-												<a href="<?php the_permalink(); ?>"><button class="main-block__btn button button__white">Details</button></a>
-												<a href="<?php the_field( 'book_button_link' ); ?>"><button class="main-block__btn button button__blue"><?php the_field( 'book_button' ); ?></button></a>
+												<a href="<?php the_permalink(); ?>">
+													<button class="main-block__btn button button__white">Details</button></a>
+												<a href="<?php the_field( 'book_button_link' ); ?>">
+													<button class="main-block__btn button button__blue"><?php the_field( 'book_button' ); ?></button></a>
 											</div>
 										</div>
 									</div>
@@ -56,6 +58,13 @@ get_header(); ?>
 							endif;
 							wp_reset_postdata();
 							?>
+							<div class="col-md-6">
+								<div class="main-block informations-block">
+									<p class="main-block__title inverted-color"><?php the_field( 'informations_title' ); ?></p>
+									<?php the_field( 'informations_content' ); ?>
+
+								</div>
+							</div>
 						</div><!-- .row -->
 					</section><!-- #main-content__wrapper -->
 				</div><!-- #main-content-->
