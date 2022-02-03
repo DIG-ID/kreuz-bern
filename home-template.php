@@ -6,7 +6,10 @@
  */
 
 get_header();
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 ?>
 
 <div id="primary" class="content-area">
@@ -71,4 +74,5 @@ get_header();
 		</div><!-- .container -->
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
-<?php get_footer(); ?>
+<?php
+get_footer();
