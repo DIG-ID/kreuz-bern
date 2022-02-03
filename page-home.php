@@ -5,8 +5,7 @@
  * The template for displaying all content of the homepage
  */
 
-get_header();
-?>
+get_header(); ?>
 <div id="primary" class="content-area">
 	<section class="home-banner">
 		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
@@ -69,5 +68,4 @@ get_header();
 		</div><!-- .container -->
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
-<?php
-get_footer();
+<?php get_footer();

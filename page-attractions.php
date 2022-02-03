@@ -63,5 +63,4 @@ $the_query = new WP_Query( $args );
 		</div><!-- .container -->
 	</main><!-- #main -->
 </div><!-- #primary -->
-<?php
-get_footer();
+<?php get_footer();
