@@ -5,9 +5,7 @@
  * The template for displaying the galerie images
  */
 
-get_header();
-
-?>
+get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="container px-0">

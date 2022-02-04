@@ -5,8 +5,7 @@
  * The template for displaying all about us page
  */
 
-get_header();
-?>
+get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="container px-0">
@@ -66,5 +65,4 @@ get_header();
 		</div><!-- .container -->
 	</main><!-- #main -->
 </div><!-- #primary -->
-<?php
-get_footer();
+<?php get_footer();
