@@ -8907,6 +8907,17 @@ var mySwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-conta
     prevEl: '.swiper-button-prev'
   }
 });
+var historySwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-container-history', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: ".swiper-pagination"
+  }
+});
 
 /***/ }),
 

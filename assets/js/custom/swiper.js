@@ -10,3 +10,16 @@ var mySwiper = new Swiper('.swiper-container-rooms', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+var historySwiper = new Swiper('.swiper-container-history', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+

@@ -12417,6 +12417,17 @@ body.compensate-for-scrollbar {
   display: flex;
   justify-content: space-between;
 }
+.block-image--slider img {
+  height: 100%;
+}
+.block-image--slider .block-image__content {
+  min-height: 660px;
+}
+
+.block-timeline {
+  height: 630px;
+  min-height: 630px;
+}
 
 .block {
   display: flex;
@@ -12694,6 +12705,22 @@ a.custom-logo-link > img {
   object-fit: cover;
   padding: 0;
   margin: 0;
+}
+
+.swiper-container-history {
+  overflow: hidden;
+  height: 600px;
+  margin-bottom: 30px;
+}
+.swiper-container-history .swiper-pagination {
+  background-color: #263A54;
+  color: #fff;
+  height: 30px;
+  width: 100%;
+}
+
+.swiper-button__history {
+  color: #263A54;
 }
 
 .google-maps-wrapper {
