@@ -31,9 +31,7 @@ function kreuzbern_setup() {
 
 	add_image_size( 'offers-banner-block-image', 953, 318, array( 'center', 'center' ) );
 
-	add_image_size( 'gallery-full-image', 1920, 1080, array( 'center', 'center' ) );
-
-	add_image_size( 'gallery-thumbnail-image', 465, 297.5, false );
+	add_image_size( 'gallery-thumbnail-image', 465, 300, false );
 
 }
 

@@ -14,14 +14,12 @@ get_header(); ?>
 					<div id="main-content__wrapper">
 						<div class="row">
 						<?php
-						$gallery_images         = get_field( 'gallery_images' );
-						$gallery_full_size      = 'gallery-full-image';
-						$gallery_thumbnail_size = 'gallery-thumbnail-image';
+						$gallery_images = get_field( 'gallery_images' );
 						if ( $gallery_images ) : ?>
 								<?php foreach ( $gallery_images as $image_id ) : ?>
 									<div class="col-sm-6 col-md-6 gallery-image-wrapper">
-										<a href="<?php echo esc_url( wp_get_attachment_image_url( $image_id, $gallery_full_size ) ); ?>" class="gallery-image" data-fancybox="gallery">
-											<?php echo wp_get_attachment_image( $image_id, $gallery_thumbnail_size ); ?>
+										<a href="<?php echo esc_url( wp_get_attachment_image_url( $image_id, 'full' ) ); ?>" class="gallery-image" data-fancybox="gallery">
+											<?php echo wp_get_attachment_image( $image_id, 'gallery-thumbnail-image' ); ?>
 										</a>
 									</div>
 								<?php endforeach; ?>
