@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying offers single posts
+ * Template Name: Gallery Page Template
+ *
+ * The template for displaying the galerie images
  */
 
 get_header(); ?>
@@ -11,15 +13,17 @@ get_header(); ?>
 				<section id="main-content" class="col-md-9 col-sm-9 col-xs-12">
 					<div id="main-content__wrapper">
 						<div class="row">
-							<div class="col-12">
-								<article class="block-image block-image--two-btns block-image--wide">
-									<?php the_post_thumbnail( 'offers-banner-block-image' ); ?>
-									<div class="block-image__content">
-										<h1 class="block-image__title"><?php the_title(); ?></h1>
-										<p class="block-image__text"><?php the_content(); ?></p>
+						<?php
+						$gallery_images = get_field( 'gallery_images' );
+						if ( $gallery_images ) : ?>
+								<?php foreach ( $gallery_images as $image_id ) : ?>
+									<div class="col-sm-6 col-md-6 gallery-image-wrapper">
+										<a href="<?php echo esc_url( wp_get_attachment_image_url( $image_id, 'full' ) ); ?>" class="gallery-image" data-fancybox="gallery">
+											<?php echo wp_get_attachment_image( $image_id, 'gallery-thumbnail-image' ); ?>
+										</a>
 									</div>
-								</article>
-							</div>
+								<?php endforeach; ?>
+						<?php endif; ?>
 						</div><!-- .row -->
 					</div><!-- #main-content__wrapper -->
 				</section><!-- #main-content -->

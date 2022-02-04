@@ -18,11 +18,12 @@
     width: 185px
     float: left
     margin-right: 30px
+    transition: all .4s ease-in-out
   &__title
     padding: 0px 28px
     margin-top: 23px
     color: #000000
-    font-family: 'SectraBook'
+    font-family: $titles-font
     font-size: 22px
     line-height: 27px
     letter-spacing: 0.06em
@@ -33,9 +34,10 @@
     margin-top: 13.6px
     letter-spacing: .05em
     hyphens: auto
-    font-family: 'WalsheimThin'
+    font-family: $primary-font
     font-size: 14px
     line-height: 23px
+    hyphens: auto
   &__tpic
     width: 462px
     height: 328px
@@ -126,6 +128,7 @@
     text-decoration: none
     text-transform: uppercase
     color: $primary-color
+    transition: all .4s ease-in-out
     &:hover
       background-color: $primary-color
       color: #fff

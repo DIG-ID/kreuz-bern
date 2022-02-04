@@ -8,7 +8,7 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="container">
+		<div class="container px-0">
 			<div class="row">
 				<div id="main-content" class="col-md-9 col-sm-9 col-xs-12">
 					<section id="main-content__wrapper">
