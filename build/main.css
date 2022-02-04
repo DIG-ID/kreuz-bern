@@ -12501,6 +12501,9 @@ body.compensate-for-scrollbar {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.sb__guests-rooms {
+  width: 30% !important;
+}
 .sb__footer {
   display: none;
 }
@@ -12564,6 +12567,7 @@ body.compensate-for-scrollbar {
   font-weight: 600;
   font-size: 12px !important;
   line-height: 23px;
+  width: 20% !important;
   height: 35px !important;
   padding: 5px 30px !important;
   letter-spacing: 1.4px;
@@ -12584,6 +12588,12 @@ body {
 }
 
 /*main menu*/
+#wrapper-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
 .navbar {
   padding-left: 60px;
   padding-right: 60px;
