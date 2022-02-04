@@ -23,6 +23,24 @@
 		}
 	});
 	SBSyncroBox({
+		CodLang: 'DE',
+		Currency: 'CHF',
+		MainContainerId: 'sb-container-bar-de',
+		Styles: {
+			FontFamily: '"WalsheimThin", cursive, sans-serif',
+			Theme: 'light-pink',
+			CustomColor: "#000000",
+			CustomLabelColor:"#000000",
+			CustomBGColor: "#FFF",
+			CustomButtonColor: "#FFF",
+			CustomButtonBGColor: "#263a54",
+			CustomIntentSelectionDaysBGColor: "#263a54",
+			CustomIntentSelectionColor: "#263a54",
+			CustomIconColor: "#263a54",
+			CustomButtonHoverBGColor:"#263a54"
+		}
+	});
+	SBSyncroBox({
 		CodLang: 'EN',
 		Currency: 'CHF',
 		MainContainerId: 'sb-container-bar-en',

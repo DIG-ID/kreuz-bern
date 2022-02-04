@@ -27,6 +27,9 @@ get_header(); ?>
 									?>
 									<div class="col-12 col-md-6">
 										<article class="main-block">
+											<?php if ( get_field( 'specials_banner_check' ) ) : ?>
+												<div class="banner__circle"><?php the_field( 'specials_banner_content' ); ?></div>
+											<?php endif; ?>
 											<?php
 											$room_sliders = get_field( 'gallery_slider' );
 											if ( $room_sliders ) :

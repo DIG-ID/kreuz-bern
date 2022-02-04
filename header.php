@@ -66,7 +66,7 @@
 							)
 						);
 						?>
-					<a href="#"><button class="button button__blue button__booking">BUCHEN</button></a>
+					<a href="#boxzilla-318"><button class="button button__blue button__booking">BUCHEN</button></a>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->

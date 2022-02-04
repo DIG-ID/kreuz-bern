@@ -21,7 +21,12 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--1">
-									<img class="main-block__tpic" alt="zimmer picture" src="<?php the_field( 'zimmer_block_image' ); ?>">
+									<?php if ( get_field( 'zimmer_block_banner_check' ) ) : ?>
+										<div class="banner__circle"><?php the_field( 'zimmer_block_banner_content' ); ?></div>
+									<?php endif; ?>
+									<a href="<?php the_field( 'zimmer_block_details_button_link' ); ?>">
+										<img class="main-block__tpic" alt="zimmer picture" src="<?php the_field( 'zimmer_block_image' ); ?>">
+									</a>
 									<h2 class="main-block__title"><?php the_field( 'zimmer_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'zimmer_block_text' ); ?></p>
 									<div class="main-block__btn-wrapper">
@@ -32,6 +37,9 @@ get_header(); ?>
 							</div>
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--2">
+									<?php if ( get_field( 'hotel_block_banner_check' ) ) : ?>
+										<div class="banner__circle"><?php the_field( 'hotel_block_banner_content' ); ?></div>
+									<?php endif; ?>
 									<img class="main-block__tpic" alt="hotel picture" src="<?php the_field( 'hotel_block_image' ); ?>">
 									<h2 class="main-block__title"><?php the_field( 'hotel_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'hotel_block_text' ); ?></p>
@@ -41,7 +49,12 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--3">
-									<img class="main-block__tpic" alt="offers picture" src="<?php the_field( 'offers_block_image' ); ?>">
+									<?php if ( get_field( 'offers_block_banner_check' ) ) : ?>
+										<div class="banner__circle"><?php the_field( 'offers_block_banner_content' ); ?></div>
+									<?php endif; ?>
+									<a href="<?php the_field( 'offers_block_details_button_link' ); ?>">
+										<img class="main-block__tpic" alt="offers picture" src="<?php the_field( 'offers_block_image' ); ?>">
+									</a>
 									<h2 class="main-block__title"><?php the_field( 'offers_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'offers_block_text' ); ?></p>
 									<div class="main-block__btn-wrapper">
@@ -51,7 +64,12 @@ get_header(); ?>
 							</div>
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--4">
-									<img class="main-block__tpic" alt="zimmer picture" src="<?php the_field( 'restaurant_block_image' ); ?>">
+									<?php if ( get_field( 'resturant_block_banner_check' ) ) : ?>
+										<div class="banner__circle"><?php the_field( 'resturant_block_banner_content' ); ?></div>
+									<?php endif; ?>
+									<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>">
+										<img class="main-block__tpic" alt="restaurant picture" src="<?php the_field( 'restaurant_block_image' ); ?>">
+									</a>
 									<h2 class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'restaurant_block_text' ); ?></p>
 									<div class="main-block__btn-wrapper">
