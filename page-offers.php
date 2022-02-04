@@ -27,15 +27,17 @@ $offers_query = new WP_Query( $offers_args );
 								while ( $offers_query->have_posts() ) :
 									$offers_query->the_post();
 									?>
-									<div class="col-md-6">
+									<div class="col-sm-12 col-md-6">
 										<article class="block-image block-image--two-btns">
-											<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
+											<a href="<?php echo esc_url( get_permalink() ); ?>">
+												<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
+											</a>
 											<div class="block-image__content">
 												<h2 class="block-image__title"><?php the_field( 'title' ); ?></h2>
 												<p class="block-image__text"><?php the_field( 'description' ); ?></p>
 												<div class="block-image__btn--wrapper">
 													<a class="block-image__btn" href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>
-													<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>"><?php the_field( 'book_button' ); ?></a>
+													<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>" target="_blank"><?php the_field( 'book_button' ); ?></a>
 												</div>
 											</div>
 										</article><!-- .block-image -->

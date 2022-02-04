@@ -13,7 +13,7 @@ get_header(); ?>
 				<section id="main-content" class="col-md-9 col-sm-9 col-xs-12">
 					<div id="main-content__wrapper">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-sm-12 col-md-12">
 								<div class="block block-wide">
 									<h1 class="block__title"><?php the_field( 'page_title' ); ?></h1>
 									<p class="block__text"><?php the_field( 'page_description' ); ?></p>
@@ -21,7 +21,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-sm-12 col-md-6">
 								<div class="block-image">
 									<?php
 									$history_image = get_field( 'history_block_image' );
@@ -42,7 +42,7 @@ get_header(); ?>
 									</div>
 								</div><!-- .block-image -->
 							</div><!-- .col -->
-							<div class="col-md-6">
+							<div class="col-sm-12 col-md-6">
 								<div class="block-image">
 									<?php
 									if ( $team_image ) :

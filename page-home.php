@@ -22,7 +22,7 @@ get_header(); ?>
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--1">
 									<img class="main-block__tpic" alt="zimmer picture" src="<?php the_field( 'zimmer_block_image' ); ?>">
-									<p class="main-block__title"><?php the_field( 'zimmer_block_title' ); ?></p>
+									<h2 class="main-block__title"><?php the_field( 'zimmer_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'zimmer_block_text' ); ?></p>
 									<div class="main-block__btn-wrapper">
 										<a href="<?php the_field( 'zimmer_block_details_button_link' ); ?>"><button class="main-block__btn button button__white"><?php the_field( 'zimmer_block_details_button' ); ?></button></a>
@@ -33,7 +33,7 @@ get_header(); ?>
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--2">
 									<img class="main-block__tpic" alt="hotel picture" src="<?php the_field( 'hotel_block_image' ); ?>">
-									<p class="main-block__title"><?php the_field( 'hotel_block_title' ); ?></p>
+									<h2 class="main-block__title"><?php the_field( 'hotel_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'hotel_block_text' ); ?></p>
 								</div>
 							</div>
@@ -42,7 +42,7 @@ get_header(); ?>
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--3">
 									<img class="main-block__tpic" alt="offers picture" src="<?php the_field( 'offers_block_image' ); ?>">
-									<p class="main-block__title"><?php the_field( 'offers_block_title' ); ?></p>
+									<h2 class="main-block__title"><?php the_field( 'offers_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'offers_block_text' ); ?></p>
 									<div class="main-block__btn-wrapper">
 										<a href="<?php the_field( 'offers_block_details_button_link' ); ?>"><button class="main-block__btn button button__white"><?php the_field( 'offers_block_details_button' ); ?></button></a>
@@ -52,7 +52,7 @@ get_header(); ?>
 							<div class="col-md-6">
 								<div class="main-block" id="home__box--4">
 									<img class="main-block__tpic" alt="zimmer picture" src="<?php the_field( 'restaurant_block_image' ); ?>">
-									<p class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></p>
+									<h2 class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'restaurant_block_text' ); ?></p>
 									<div class="main-block__btn-wrapper">
 										<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>"><button class="main-block__btn button button__white"><?php the_field( 'restaurant_block_details_button' ); ?></button></a>

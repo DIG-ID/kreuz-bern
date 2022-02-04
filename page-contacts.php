@@ -20,13 +20,13 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-sm-12 col-md-6">
 								<div class="block block-large">
 									<h3 class="block__title"><?php the_field( 'location_block_title' ); ?></h3>
 									<p class="block__text"><?php the_field( 'location_block_description' ); ?></p>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-sm-12 col-md-6">
 								<div class="block block-large">
 									<h3 class="block__title"><?php the_field( 'howto_block_title_copy' ); ?></h3>
 									<p class="block__text"><?php the_field( 'howto_block_description_copy' ); ?></p>

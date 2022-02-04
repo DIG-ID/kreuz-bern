@@ -25,8 +25,8 @@ get_header(); ?>
 								while ( $rooms_query->have_posts() ) :
 									$rooms_query->the_post();
 									?>
-									<div class="col-md-6">
-										<div class="main-block">
+									<div class="col-12 col-md-6">
+										<article class="main-block">
 											<?php
 											$room_sliders = get_field( 'gallery_slider' );
 											if ( $room_sliders ) :
@@ -43,13 +43,13 @@ get_header(); ?>
 												<?php
 											endif;
 											?>
-											<p class="main-block__title"><?php the_field( 'title' ); ?></p>
+											<h2 class="main-block__title"><?php the_field( 'title' ); ?></h2>
 											<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
 											<div class="main-block__btn-wrapper">
 												<a href="<?php the_permalink(); ?>"><button class="main-block__btn button button__white"><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></button></a>
 												<a href="<?php the_field( 'book_button_link' ); ?>"><button class="main-block__btn button button__blue"><?php the_field( 'book_button' ); ?></button></a>
 											</div>
-										</div>
+										</article>
 									</div>
 									<?php
 								endwhile;
@@ -58,9 +58,8 @@ get_header(); ?>
 							?>
 							<div class="col-md-6">
 								<div class="main-block informations-block">
-									<p class="main-block__title inverted-color"><?php the_field( 'informations_title' ); ?></p>
+									<h2 class="main-block__title inverted-color"><?php the_field( 'informations_title' ); ?></h2>
 									<?php the_field( 'informations_content' ); ?>
-
 								</div>
 							</div>
 						</div><!-- .row -->

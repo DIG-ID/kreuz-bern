@@ -28,12 +28,14 @@ $the_query = new WP_Query( $args );
 								while ( $the_query->have_posts() ) :
 									$the_query->the_post();
 									?>
-										<div class="col-md-6">
+										<div class="col-sm-12 col-md-6">
 											<article class="block-image">
 												<?php if ( get_field( 'banner_check' ) ) : ?>
 													<span class="block-image__badge"><?php the_field( 'banner_content' ); ?></span>
 												<?php endif; ?>
-												<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
+												<a href="<?php the_field( 'details_button_link' ); ?>">
+													<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
+												</a>
 												<div class="block-image__content">
 													<h2 class="block-image__title"><?php the_field( 'title' ); ?></h2>
 													<span class="block-image__subtitle" ><?php the_field( 'subtitle' ); ?></span>
