@@ -25,7 +25,7 @@ get_header(); ?>
 										<div class="block-image__text"><?php the_content(); ?></div>
 										<div class="block-image__btn--wrapper">
 											<a class="block-image__btn" href="<?php ?>"><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ); ?></a>
-											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>"><?php the_field( 'book_button' ); ?></a>
+											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>" target="_blank"><?php the_field( 'book_button' ); ?></a>
 										</div>
 									</div>
 								</article>
