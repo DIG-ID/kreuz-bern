@@ -11,7 +11,7 @@ $args      = array(
 	'posts_per_page' => 4,
 	'post_type'      => 'attractions',
 	'nopaging'       => true,
-	'order'          => 'ASC',
+	'order'          => 'DESC',
 	'orderby'        => 'date',
 );
 $the_query = new WP_Query( $args );
