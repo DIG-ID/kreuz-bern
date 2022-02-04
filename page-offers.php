@@ -10,7 +10,7 @@ get_header();
 $offers_args  = array(
 	'post_type' => 'offers',
 	'nopaging'  => true,
-	'order'     => 'ASC',
+	'order'     => 'DESC',
 	'orderby'   => 'date',
 );
 $offers_query = new WP_Query( $offers_args );
