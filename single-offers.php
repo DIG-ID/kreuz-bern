@@ -8,19 +8,25 @@ get_header();
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="container">
+		<div class="container px-0">
 			<div class="row">
 				<section id="main-content" class="col-md-9 col-sm-9 col-xs-12">
 					<div id="main-content__wrapper">
 						<div class="row">
 							<div class="col-12">
 								<article class="block-image block-image--two-btns block-image--wide">
-									<?php the_post_thumbnail( 'offers-banner-block-image' ); ?>
+									<?php
+									$offers_banner = get_field('image');
+									$offers_banner_size = 'offers-banner-block-image';
+									if ( $offers_banner ) :
+										echo wp_get_attachment_image( $offers_banner, $offers_banner_size );
+									endif;
+									?>
 									<div class="block-image__content">
 										<h1 class="block-image__title"><?php the_field( 'title' ); ?></h1>
 										<p class="block-image__text"><?php the_field( 'description' ); ?></p>
 										<div class="block-image__btn--wrapper">
-											<a class="block-image__btn" href="<?php echo esc_url( get_post_type_archive_link( 'offers' ) ); ?>"><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ); ?></a>
+											<a class="block-image__btn" href="<?php ?>"><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern', 'kreuz-bern' ); ?></a>
 											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>"><?php the_field( 'book_button' ); ?></a>
 										</div>
 									</div>
