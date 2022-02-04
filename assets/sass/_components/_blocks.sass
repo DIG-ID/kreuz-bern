@@ -47,10 +47,11 @@
 
 .block-image
   padding: 0
+  max-height: 630px
   min-height: 630px
   margin-bottom: 30px
   position: relative
-  a
+  > a
     display: block
   img
     max-width: 100%
@@ -121,11 +122,10 @@
       letter-spacing: 0.05em
       hyphens: auto
       -webkit-font-smoothing: antialiased
-      &:last-child
-        padding-bottom: 20px
+      padding-bottom: 20px
     a
       text-decoration: none
-      color: #fff
+      color: #000
       font-weight: 600
   &__btn
     display: block
