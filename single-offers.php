@@ -17,8 +17,12 @@ get_header();
 								<article class="block-image block-image--two-btns block-image--wide">
 									<?php the_post_thumbnail( 'offers-banner-block-image' ); ?>
 									<div class="block-image__content">
-										<h1 class="block-image__title"><?php the_title(); ?></h1>
-										<p class="block-image__text"><?php the_content(); ?></p>
+										<h1 class="block-image__title"><?php the_field( 'title' ); ?></h1>
+										<p class="block-image__text"><?php the_field( 'description' ); ?></p>
+										<div class="block-image__btn--wrapper">
+											<a class="block-image__btn" href="<?php echo esc_url( get_post_type_archive_link( 'offers' ) ); ?>"><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ); ?></a>
+											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>"><?php the_field( 'book_button' ); ?></a>
+										</div>
 									</div>
 								</article>
 							</div>
