@@ -33,8 +33,8 @@ defined( 'ABSPATH' ) || exit;
 		</footer><!-- wrapper end -->
 
 		</div><!-- #page we need this extra closing tag here -->
+		<?php get_template_part( 'template-parts/simple-booking-script' ); ?>
 		<?php wp_footer(); ?>
-
 	</body>
 
 </html>
