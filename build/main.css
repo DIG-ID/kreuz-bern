@@ -12197,6 +12197,37 @@ body.compensate-for-scrollbar {
   box-sizing: border-box;
 }
 
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  -webkit-clip-path: none;
+          clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
 .button {
   padding: 5px 0;
   font-family: "WalsheimThin";
@@ -12422,6 +12453,63 @@ body.compensate-for-scrollbar {
 }
 .block-image--slider .block-image__content {
   min-height: 660px;
+}
+.block-image--slider .block-image__title {
+  margin-bottom: 20px;
+}
+.block-image--slider .block-image__subtitle {
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "WalsheimThin", sans-serif;
+  font-size: 14px;
+}
+.block-image--wide {
+  max-height: 100%;
+}
+.block-image--wide .block-image__content {
+  min-height: 630px;
+}
+.block-image--wide h1, .block-image--wide .h1,
+.block-image--wide h2,
+.block-image--wide .h2,
+.block-image--wide h3,
+.block-image--wide .h3,
+.block-image--wide h4,
+.block-image--wide .h4,
+.block-image--wide h5,
+.block-image--wide .h5,
+.block-image--wide h6,
+.block-image--wide .h6 {
+  font-family: "SectraBook", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.block-image--wide p {
+  font-family: "WalsheimThin", sans-serif;
+  font-size: 13.6px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  letter-spacing: 0.05em;
+  line-height: 19.5px;
+  margin-bottom: 20px;
+}
+.block-image--wide ul, .block-image--wide ol, .block-image--wide li {
+  font-family: "WalsheimThin", sans-serif;
+  font-size: 13.6px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  letter-spacing: 0.05em;
+  line-height: 19.5px;
+}
+.block-image--wide a {
+  color: #263A54;
 }
 
 .block-timeline {
@@ -12738,8 +12826,23 @@ a.custom-logo-link > img {
 .swiper-container-history .swiper-pagination {
   background-color: #263A54;
   color: #fff;
-  height: 30px;
   width: 100%;
+}
+.swiper-container-history .swiper-pagination-bullets {
+  bottom: 0;
+  padding: 6px 0px 8px;
+}
+.swiper-container-history .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+.swiper-container-history .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #263A54;
+  border: 1px solid #fff;
 }
 
 .swiper-button__history {
@@ -12791,7 +12894,7 @@ a.custom-logo-link > img {
 #main {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 60px 0 30px;
+  padding: 90px 0 80px;
 }
 
 /*# sourceMappingURL=main.css.map*/

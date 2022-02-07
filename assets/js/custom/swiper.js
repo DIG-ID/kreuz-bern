@@ -1,6 +1,8 @@
-import Swiper, { Navigation } from 'swiper';
+import Swiper from "swiper/swiper-bundle.min.js";
 
-Swiper.use([Navigation]);
+function swiper($selector, $options) {
+  return new Swiper($selector, $options);
+}
 
 var mySwiper = new Swiper('.swiper-container-rooms', {
   direction: 'horizontal',
@@ -14,6 +16,8 @@ var mySwiper = new Swiper('.swiper-container-rooms', {
 var historySwiper = new Swiper('.swiper-container-history', {
   direction: 'horizontal',
   slidesPerView: 1,
+  loop: true,
+  speed: 600,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
