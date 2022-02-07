@@ -21,7 +21,7 @@ get_header(); ?>
 											<div class="swiper-wrapper">
 												<?php foreach ( $single_room_sliders as $single_room_slider ) : ?>
 													<div class="swiper-slide">
-														<img class="main-block__tpic" alt="zimmer picture" src="<?php echo esc_url( $single_room_slider['url'] ); ?>">
+														<?php echo wp_get_attachment_image( $single_room_slider, 'full' ); ?>
 													</div>
 												<?php endforeach; ?>
 											</div>
@@ -37,7 +37,7 @@ get_header(); ?>
 										<p class="block-image__subtitle"><?php the_field( 'subtitle' ); ?></p>
 										<div class="block-image__text"><?php the_content(); ?></div>
 										<div class="block-image__btn--wrapper">
-											<a class="block-image__btn" href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ); ?></a>
+											<a class="block-image__btn" href=""><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ); ?></a>
 											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>" target="_blank"><?php the_field( 'book_button' ); ?></a>
 										</div>
 									</div>
