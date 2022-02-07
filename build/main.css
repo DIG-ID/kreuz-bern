@@ -12571,6 +12571,18 @@ body.compensate-for-scrollbar {
   text-transform: uppercase;
 }
 
+#sb-container-bar-de .sb__dates {
+  width: 50%;
+}
+#sb-container-bar-de .sb__guests-rooms {
+  width: 25% !important;
+  margin-top: 0;
+}
+#sb-container-bar-de .sb__btn--verify {
+  width: 25% !important;
+  margin-top: 0;
+}
+
 #sb-container .sb-screen-l .sb__btn--verify {
   float: right !important;
   margin-top: 0px !important;
@@ -12583,6 +12595,14 @@ body.compensate-for-scrollbar {
   padding: 5px 30px !important;
   letter-spacing: 1.4px;
   border-radius: 0;
+}
+
+.booking-bar__container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 60px;
 }
 
 /*LAYOUT STYLES*/
@@ -12637,6 +12657,9 @@ a.custom-logo-link > img {
   padding-left: 60px;
   padding-right: 60px;
   background-color: #ffffff;
+  position: relative;
+  max-height: 97vh;
+  overflow: hidden;
 }
 .home-banner__video {
   width: 100%;
