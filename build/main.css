@@ -12200,7 +12200,7 @@ body.compensate-for-scrollbar {
 .button {
   padding: 5px 0;
   font-family: "WalsheimThin";
-  font-size: 12px;
+  font-size: 13.6px;
   letter-spacing: 0.1em;
   font-weight: 400;
   text-transform: uppercase;
@@ -12610,7 +12610,7 @@ body {
   padding-right: 60px;
 }
 .navbar .menu-item {
-  margin: 10px 10px;
+  margin: 10px 20px;
 }
 .navbar .menu-item > a {
   font-family: "SectraBook", sans-serif;
