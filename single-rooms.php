@@ -47,6 +47,10 @@ get_header(); ?>
 					</div><!-- #main-content__wrapper -->
 				</section><!-- #main-content -->
 				<aside id="main-sidebar" class="col-md-3 col-sm-4 col-xs-12">
+					<div class="block">
+						<h3 class="block__title"><?php esc_html_e( 'Ausstattung', 'kreuz-bern' ); ?></h3>
+						<p class="block__text"><?php the_field( 'amenities' ); ?></p>
+					</div>
 					<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 				</aside><!-- #main-sidebar -->
 			</div><!-- .row -->

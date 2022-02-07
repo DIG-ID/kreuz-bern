@@ -8,6 +8,8 @@ var mySwiper = new Swiper('.swiper-container-rooms', {
   direction: 'horizontal',
   slidesPerView: 1,
   loop: true,
+  speed: 600,
+  centeredSlides: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -51,4 +53,3 @@ var singleRoomSwiper = new Swiper('.swiper-container-single-room', {
     el: ".swiper-pagination",
   },
 });
-

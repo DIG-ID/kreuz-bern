@@ -17,7 +17,7 @@ get_header(); ?>
 							$rooms_query_args = array(
 								'post_type' => 'rooms',
 								'nopaging'  => true,
-								'order'     => 'ASC',
+								'order'     => 'DESC',
 								'orderby'   => 'date',
 							);
 							$rooms_query = new WP_Query( $rooms_query_args );
@@ -36,8 +36,10 @@ get_header(); ?>
 												?>
 												<div class="swiper-container-rooms">
 													<div class="swiper-wrapper">
-														<?php foreach( $room_sliders as $room_slider ): ?>
-															<?php echo wp_get_attachment_image( $room_slider, 'main-block-thumbnail' ); ?>
+														<?php foreach( $room_sliders as $room_slider ) : ?>
+															<a href="<?php echo esc_url( get_permalink() ); ?>" class="swiper-slide">
+																<?php echo wp_get_attachment_image( $room_slider, 'main-block-thumbnail' ); ?>
+															</a>
 														<?php endforeach; ?>
 													</div>
 													<div class="swiper-button-prev swiper-button__rooms"></div>
