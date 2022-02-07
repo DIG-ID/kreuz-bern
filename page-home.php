@@ -11,7 +11,7 @@ get_header(); ?>
 		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 			<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
 		</video>
-		<div class="booking-bar__container">
+		<div class="booking-bar__container"> 
 			<div id="sb-container"></div>
 		</div>
 	</section>
