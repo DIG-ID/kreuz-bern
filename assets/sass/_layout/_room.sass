@@ -1,12 +1,15 @@
-.swiper-container-history
+.swiper-container-single-room
   overflow: hidden
   height: 600px
   margin-bottom: 30px
+  background-color: $primary-color
   .swiper-pagination
     color: #fff
     width: 100%
+    text-align: right
   .swiper-pagination-bullets
     bottom: 0
+    padding-right: 20px
     padding-bottom: 4px
     padding-top: 1px
     .swiper-pagination-bullet
@@ -20,7 +23,7 @@
     .swiper-pagination-bullet-active
       background-color: $primary-color
       border: 1px solid #fff
-  .swiper-button__history
+  .swiper-button__single-room
     color: #fff
     &::after
       font-family: $third-font
@@ -32,5 +35,6 @@
     &::after
       content: '\e901'
 
+.swiper-button
   &__history
     color: $primary-color
