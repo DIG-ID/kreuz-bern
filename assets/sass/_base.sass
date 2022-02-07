@@ -3,6 +3,20 @@
 *::before
   box-sizing: border-box
 
+.swiper-button-prev,
+.swiper-button-next
+  color: #fff
+  &::after
+    font-family: $third-font
+
+.swiper-button-prev
+  &::after
+    content: '\e900'
+
+.swiper-button-next
+  &::after
+    content: '\e901'
+
 .screen-reader-text
   border: 0
   clip: rect(1px, 1px, 1px, 1px)

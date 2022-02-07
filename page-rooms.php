@@ -37,7 +37,7 @@ get_header(); ?>
 												<div class="swiper-container-rooms">
 													<div class="swiper-wrapper">
 														<?php foreach( $room_sliders as $room_slider ): ?>
-															<div class="swiper-slide"><img class="main-block__tpic" alt="zimmer picture" src="<?php echo esc_url($room_slider['url']); ?>"></div>
+															<?php echo wp_get_attachment_image( $room_slider, 'main-block-thumbnail' ); ?>
 														<?php endforeach; ?>
 													</div>
 													<div class="swiper-button-prev swiper-button__rooms"></div>
