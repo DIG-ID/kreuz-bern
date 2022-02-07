@@ -12,7 +12,7 @@ get_header(); ?>
 					<div id="main-content__wrapper">
 						<div class="row">
 							<div class="col-12">
-								<article class="block-image block-image--two-btns block-image--wide">
+								<article class="block-image block-image--two-btns">
 									<?php
 									$offers_banner      = get_field( 'image' );
 									$offers_banner_size = 'offers-banner-block-image';
