@@ -68,7 +68,7 @@
 						?>
 						<div id="bookingbar-content" style="display:none;min-height: 350px;max-width:1100px;width:100%">
 							<div class="buchen__title">DIREKT BUCHEN UND SPAREN</div>
-							<div id="sb-container-bar-de"></div></div>
+							<div id="sb-container-bar-de"></div></div> 
 					<button data-fancybox="dialog" data-src="#bookingbar-content" class="button button__blue button__booking">BUCHEN</button>
 				</nav><!-- .site-navigation -->
 
