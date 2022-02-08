@@ -24,7 +24,7 @@ get_header(); ?>
 										<h1 class="block-image__title"><?php the_title(); ?></h1>
 										<div class="block-image__text"><?php the_content(); ?></div>
 										<div class="block-image__btn--wrapper">
-											<?php icl_link_to_element( 259, 'post', esc_html__( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ) ); ?>
+											<?php icl_link_to_element( 42, 'post', esc_html__( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ) ); ?>
 											<!--<a class="block-image__btn" href="<?php ?>"><?php esc_html_e( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ); ?></a>-->
 											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>" target="_blank"><?php the_field( 'book_button' ); ?></a>
 										</div>
