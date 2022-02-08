@@ -1,6 +1,8 @@
 .wpml-ls-legacy-dropdown
   width: auto
   margin-right: 20px
+  .wpml-ls-current-language:hover>a
+    background: #fff
   .wpml-ls-item
     .wpml-ls-item-toggle
       font-family: $primary-font
@@ -8,23 +10,25 @@
       letter-spacing: 0.1em
       -webkit-font-smoothing: antialiased
       border: 1px #000 solid
-      padding: 10px
+      padding: 8px 7px
+      display: block
       &::after
         display: none
-      &:focus
+      &:focus,
+      &:hover
         background-color: #fff
 
   .wpml-ls-sub-menu
-    margin-top: 11px
+    margin-top: 12px
     background-color: $primary-color
-    border: none
+    transition: all .3s ease-in-out
     .wpml-ls-item
       a
         font-family: $primary-font
         font-size: 12px
         letter-spacing: 0.1em
         -webkit-font-smoothing: antialiased
-        padding: 10px
+        padding: 8px 7px
         margin: 0
         background-color: $primary-color
         color: #c8c8c8
