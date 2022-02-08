@@ -7,19 +7,21 @@
   &__title
     min-height: 600px
     min-width: 255px
-    background-image: url('/assets/images/404back.png')
+    background: transparent url('../../images/404back.png') no-repeat center center
     padding-top: 320px
+    text-align: center
     h1
       font-family: $primary-font
       font-size: 104px
       font-weight: 700
       text-transform: uppercase
-      line-height: 120px
+      line-height: 100px
       color: #fff
       span
         font-size: 60px
 
   &__content
+    margin-left: 60px
     p
       color: $primary-color
       text-transform: uppercase
@@ -35,3 +37,23 @@
     font-size: 20px
     letter-spacing: 2px
     line-height: 30px
+    margin-bottom: 20px
+
+  &__back-to-home
+    display: block
+    width: 100%
+    padding: 4px 0px
+    border: 1px solid $primary-color
+    font-family: $primary-font
+    font-size: 13.6px
+    line-height: 20px
+    letter-spacing: 0.075em
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    color: #fff
+    background-color: $primary-color
+    transition: all .4s ease-in-out
+    &:hover
+      background-color: transparent
+      color: $primary-color

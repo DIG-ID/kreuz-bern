@@ -17,7 +17,7 @@ get_header(); ?>
 							<div class="not-found__content">
 								<p class="not-found__subtitle">Sorry!</p>
 								<p class="not-found__description">THE PAGE YOU WERE LOOKING <br> FOR COULD NOT BE FOUND.</p>
-								<a href="<?php echo esc_url( site_url() ); ?>" class="block__btn block_btn--dark"><?php esc_html_e( 'Home', 'kreuz-bern' ); ?></a>
+								<a href="<?php echo esc_url( site_url() ); ?>" class="not-found__back-to-home"><?php esc_html_e( 'Home', 'kreuz-bern' ); ?></a>
 							</div>
 						</div>
 					</div><!-- #main-content__wrapper -->
