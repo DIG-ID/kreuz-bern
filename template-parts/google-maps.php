@@ -4,7 +4,7 @@
     border: #ccc solid 1px;
 }
 
-+.acf-map.map-attractions{height: 630px;}
+.acf-map.map-attractions{height: 630px;}
 .acf-map.map-contacts {height: 630px;}
 
 .acf-map img {
@@ -160,7 +160,7 @@ function initMarker( $marker, map ) {
         position : latLng,
         map: map,
         icon: {
-          url: "http://localhost/kreuzbern/wp-content/uploads/2022/02/kreuz_hotel_bern_mapmarker.png",
+          url: "<?php home_url(); ?>/wp-content/uploads/2022/02/kreuz_hotel_bern_mapmarker.png",
         }
     });
 
