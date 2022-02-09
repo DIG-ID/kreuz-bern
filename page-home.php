@@ -60,10 +60,12 @@ get_header(); ?>
 								<a href="<?php the_field( 'offers_block_details_button_link' ); ?>">
 									<img class="main-block__tpic" alt="offers picture" src="<?php the_field( 'offers_block_image' ); ?>">
 								</a>
-								<h2 class="main-block__title"><?php the_field( 'offers_block_title' ); ?></h2>
-								<p class="main-block__text"><?php the_field( 'offers_block_text' ); ?></p>
-								<div class="main-block__btn-wrapper">
-									<a href="<?php the_field( 'offers_block_details_button_link' ); ?>"><button class="main-block__btn button button__white"><?php the_field( 'offers_block_details_button' ); ?></button></a>
+								<div class="main-block__content">
+									<h2 class="main-block__title"><?php the_field( 'offers_block_title' ); ?></h2>
+									<p class="main-block__text"><?php the_field( 'offers_block_text' ); ?></p>
+									<div class="main-block__btn-wrapper">
+										<a href="<?php the_field( 'offers_block_details_button_link' ); ?>" class="main-block__btn "><?php the_field( 'offers_block_details_button' ); ?></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -75,11 +77,14 @@ get_header(); ?>
 								<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>">
 									<img class="main-block__tpic" alt="restaurant picture" src="<?php the_field( 'restaurant_block_image' ); ?>">
 								</a>
-								<h2 class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></h2>
-								<p class="main-block__text"><?php the_field( 'restaurant_block_text' ); ?></p>
-								<div class="main-block__btn-wrapper">
-									<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>"><button class="main-block__btn button button__white"><?php the_field( 'restaurant_block_details_button' ); ?></button></a>
+								<div class="main-block__content">
+									<h2 class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></h2>
+									<p class="main-block__text"><?php the_field( 'restaurant_block_text' ); ?></p>
+									<div class="main-block__btn-wrapper">
+										<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>" class="main-block__btn"><?php the_field( 'restaurant_block_details_button' ); ?></a>
+									</div>
 								</div>
+
 							</div>
 						</div>
 					</div><!-- .row -->
