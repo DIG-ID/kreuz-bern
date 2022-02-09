@@ -10,7 +10,7 @@ get_header();
 $advantages_args  = array(
 	'post_type' => 'advantages',
 	'nopaging'  => true,
-	'order'     => 'DESC',
+	'order'     => 'ASC',
 	'orderby'   => 'date',
 );
 $advantages_query = new WP_Query( $advantages_args ); ?>
