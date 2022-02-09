@@ -62,8 +62,10 @@ get_header(); ?>
 				?>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-15">
 					<div class="main-block main-block__informations main-block--inverted">
-						<h2 class="main-block__title"><?php the_field( 'informations_title' ); ?></h2>
-						<?php the_field( 'informations_content' ); ?>
+						<div class="main-block__content">
+							<h2 class="main-block__title"><?php the_field( 'informations_title' ); ?></h2>
+							<?php the_field( 'informations_content' ); ?>
+						</div>
 					</div>
 				</div>
 			</div><!-- .row -->
