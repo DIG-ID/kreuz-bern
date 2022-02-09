@@ -48,19 +48,19 @@ $the_query = new WP_Query( $args ); ?>
 				?>
 			</div><!-- .row -->
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 					<section class="google-maps-wrapper">
-						<?php if( have_rows('locations') ): ?>
-					    <div class="acf-map map-attractions" data-zoom="16">
-				        <?php while ( have_rows('locations') ) : the_row();
-			            $location = get_sub_field('attractions_map');
-			            $title = get_sub_field('title');
-			            ?>
-			            <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>">
-			                <h4><?php echo esc_html( $title ); ?></h4>
-			            </div>
-					    	<?php endwhile; ?>
-			    		</div>
+						<?php if ( have_rows( 'locations' ) ) : ?>
+							<div class="acf-map map-attractions" data-zoom="16">
+								<?php while ( have_rows( 'locations' ) ) : the_row();
+									$location  = get_sub_field( 'attractions_map' );
+									$map_title = get_sub_field( 'title' );
+									?>
+									<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>">
+											<h4><?php echo esc_html( $map_title ); ?></h4>
+									</div>
+								<?php endwhile; ?>
+							</div>
 						<?php endif; ?>
 					</section>
 				</div>

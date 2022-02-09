@@ -1,12 +1,19 @@
 .swiper-container-history
+  height: 630px
+  padding-bottom: 30px
+  background-color: $primary-color
+  position: relative
   overflow: hidden
-  height: 600px
-  margin-bottom: 30px
   .swiper-pagination
     color: #fff
     width: 100%
+  .swiper-pagination
+    color: #fff
+    width: 100%
+    text-align: center
   .swiper-pagination-bullets
-    bottom: 0
+    bottom: 0px
+    padding-right: 20px
     padding-bottom: 4px
     padding-top: 1px
     .swiper-pagination-bullet
@@ -21,6 +28,12 @@
       background-color: $primary-color
       border: 1px solid #fff
 
-
-  &__history
-    color: $primary-color
+@media (max-width: $lg)
+  .page-template-page-history
+    .block-image--slider
+      min-height: auto
+  .swiper-container-history
+    height: auto
+    padding-bottom: 0px
+    .swiper-pagination
+      display: none

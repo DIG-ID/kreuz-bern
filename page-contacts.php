@@ -39,10 +39,12 @@ get_header(); ?>
 		<?php do_action( 'after_main_content' ); ?>
 
 		<?php do_action( 'before_main_sidebar' ); ?>
-			<div class="block block-inverted">
-				<h3 class="block__title"><?php the_field( 'contact_block_title' ); ?></h3>
-				<p class="block__text"><?php the_field( 'contact_block_content' ); ?></p>
-				<a class="block__btn" href="mailto:<?php the_field( 'contact_block_button_url' ); ?>"><?php the_field( 'contact_block_button_text' ); ?></a>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 px-15">
+				<div class="block block-inverted">
+					<h3 class="block__title"><?php the_field( 'contact_block_title' ); ?></h3>
+					<p class="block__text"><?php the_field( 'contact_block_content' ); ?></p>
+					<a class="block__btn" href="mailto:<?php the_field( 'contact_block_button_url' ); ?>"><?php the_field( 'contact_block_button_text' ); ?></a>
+				</div>
 			</div>
 			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 		<?php do_action( 'after_main_sidebar' ); ?>
