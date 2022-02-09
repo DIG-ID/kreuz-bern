@@ -90,7 +90,7 @@ get_header(); ?>
 					</div><!-- .row -->
 				<?php do_action( 'after_main_content' ); ?>
 				<?php do_action( 'before_main_sidebar' ); ?>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 px-15">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 px-15">
 						<div class="block block-inverted percentages__block">
 							<?php echo do_shortcode( '[percentages-ca]' ); ?>
 							<p class="block__text percentages__text"><?php the_field( 'satisfaction_ratio_block_text' ); ?></p>
