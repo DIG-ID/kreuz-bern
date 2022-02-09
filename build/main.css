@@ -12280,7 +12280,7 @@ body.compensate-for-scrollbar {
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 30px;
-  width: 462px;
+  width: 100%;
   max-height: 630px;
   min-height: 630px;
   background-color: #ffffff;
@@ -12327,6 +12327,20 @@ body.compensate-for-scrollbar {
   height: 328px;
 }
 
+@media (max-width: 992px) {
+  .main-block__btn-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-block__btn-wrapper a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-block__btn {
+    width: 100%;
+  }
+}
 .inverted-color {
   color: #ffffff;
 }
@@ -12373,7 +12387,7 @@ body.compensate-for-scrollbar {
   flex-direction: column;
   width: 100%;
   min-height: 300px;
-  padding: 30px;
+  padding: 23px 30px;
   background-color: #fff;
 }
 .block-image__title {
@@ -12552,7 +12566,7 @@ body.compensate-for-scrollbar {
   flex-direction: column;
   width: 100%;
   height: 300px;
-  padding: 30px;
+  padding: 23px 30px;
   margin-bottom: 30px;
   background-color: #fff;
 }

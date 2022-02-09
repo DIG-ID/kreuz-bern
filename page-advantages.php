@@ -1,28 +1,28 @@
 <?php
 /**
- * Template Name: Offers Page Template
+ * Template Name: Advantages Page Template
  *
- * The template for displaying offers archive posts
+ * The template for displaying advantages archive posts
  */
 
 get_header();
 
-$offers_args  = array(
-	'post_type' => 'offers',
+$advantages_args  = array(
+	'post_type' => 'advantages',
 	'nopaging'  => true,
 	'order'     => 'DESC',
 	'orderby'   => 'date',
 );
-$offers_query = new WP_Query( $offers_args ); ?>
+$advantages_query = new WP_Query( $offers_args ); ?>
 
 	<?php do_action( 'wrapper_open' ); ?>
 
 		<?php do_action( 'before_main_content' ); ?>
 				<div class="row">
 					<?php
-					if ( $offers_query->have_posts() ) :
-						while ( $offers_query->have_posts() ) :
-							$offers_query->the_post();
+					if ( $advantages_query->have_posts() ) :
+						while ( $advantages_query->have_posts() ) :
+							$advantages_query->the_post();
 							?>
 							<div class="col-sm-12 col-md-6">
 								<article class="block-image block-image--two-btns">
@@ -30,12 +30,8 @@ $offers_query = new WP_Query( $offers_args ); ?>
 										<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
 									</a>
 									<div class="block-image__content">
-										<h2 class="block-image__title"><?php the_field( 'title' ); ?></h2>
-										<p class="block-image__text"><?php the_field( 'description' ); ?></p>
-										<div class="block-image__btn--wrapper">
-											<a class="block-image__btn" href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>
-											<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'book_button_link' ); ?>" target="_blank"><?php the_field( 'book_button' ); ?></a>
-										</div>
+										<h2 class="block-image__title"><?php the_title(); ?></h2>
+										<p class="block-image__text"><?php the_content(); ?></p>
 									</div>
 								</article><!-- .block-image -->
 							</div><!-- .col -->

@@ -1,10 +1,6 @@
 <?php
 /**
- * Header file for Keno Theme.
- *
- *
- *
- * @package Keno
+ * Header file for Kreuz Theme.
  */
 
 ?><!DOCTYPE html>
@@ -67,10 +63,11 @@
 						);
 						?>
 						<div id="bookingbar-content" style="display:none;min-height: 350px;max-width:1100px;width:100%">
-							<div class="buchen__title">DIREKT BUCHEN UND SPAREN</div>
-							<div id="sb-container-bar-de"></div></div> 
-							<?php do_action( 'wpml_add_language_selector' ); ?>
-					<button data-fancybox="dialog" data-src="#bookingbar-content" class="button button__blue button__booking">BUCHEN</button>
+							<div class="buchen__title"><?php esc_html_e( 'DIREKT BUCHEN UND SPAREN', 'kreuz-bern' ); ?></div>
+							<div id="sb-container-bar-de"></div>
+						</div> 
+						<?php do_action( 'wpml_add_language_selector' ); ?>
+					<button data-fancybox="dialog" data-src="#bookingbar-content" class="button button__blue button__booking"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->
