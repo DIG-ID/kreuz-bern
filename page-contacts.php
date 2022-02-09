@@ -15,7 +15,7 @@ get_header(); ?>
 						<?php
 							$location = get_field( 'contact_map' );
 							if ( $location ) : ?>
-								<div class="acf-map" data-zoom="16">
+								<div class="acf-map map-contacts" data-zoom="12">
 									<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
 								</div>
 						<?php endif; ?>

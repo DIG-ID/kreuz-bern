@@ -1,10 +1,11 @@
 <style type="text/css">
 .acf-map {
     width: 100%;
-    height: 400px;
     border: #ccc solid 1px;
-    margin: 20px 0;
 }
+
++.acf-map.map-attractions{height: 630px;}
+.acf-map.map-contacts {height: 630px;}
 
 .acf-map img {
    max-width: inherit !important;
@@ -30,9 +31,91 @@ function initMap( $el ) {
     // Find marker elements within map.
     var $markers = $el.find('.marker');
 
+    var styles = [
+      {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+              {
+                  "color": "#444444"
+              }
+          ]
+      },
+      {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+              {
+                  "color": "#f2f2f2"
+              }
+          ]
+      },
+      {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+              {
+                  "visibility": "off"
+              }
+          ]
+      },
+      {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+              {
+                  "saturation": -100
+              },
+              {
+                  "lightness": 45
+              }
+          ]
+      },
+      {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+              {
+                  "visibility": "simplified"
+              }
+          ]
+      },
+      {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+              {
+                  "visibility": "off"
+              }
+          ]
+      },
+      {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [
+              {
+                  "visibility": "off"
+              }
+          ]
+      },
+      {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+              {
+                  "color": "#aeaeae"
+              },
+              {
+                  "visibility": "on"
+              }
+          ]
+      }
+    ]
+
     // Create gerenic map.
     var mapArgs = {
         zoom        : $el.data('zoom') || 16,
+        styles: styles,
         mapTypeId   : google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map( $el[0], mapArgs );
@@ -75,7 +158,10 @@ function initMarker( $marker, map ) {
     // Create marker instance.
     var marker = new google.maps.Marker({
         position : latLng,
-        map: map
+        map: map,
+        icon: {
+          url: "http://localhost/kreuzbern/wp-content/uploads/2022/02/kreuz_hotel_bern_mapmarker.png",
+        }
     });
 
     // Append to reference for later use.
