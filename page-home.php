@@ -20,7 +20,7 @@ get_header(); ?>
 			<div class="row">
 				<?php do_action( 'before_main_content' ); ?>
 					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 							<div class="main-block" id="home__box--1">
 								<?php if ( get_field( 'zimmer_block_banner_check' ) ) : ?>
 									<div class="banner__circle"><?php the_field( 'zimmer_block_banner_content' ); ?></div>
@@ -36,7 +36,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 							<div class="main-block" id="home__box--2">
 								<?php if ( get_field( 'hotel_block_banner_check' ) ) : ?>
 									<div class="banner__circle"><?php the_field( 'hotel_block_banner_content' ); ?></div>

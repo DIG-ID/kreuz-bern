@@ -24,7 +24,7 @@ $advantages_query = new WP_Query( $advantages_args ); ?>
 						while ( $advantages_query->have_posts() ) :
 							$advantages_query->the_post();
 							?>
-							<div class="col-sm-12 col-md-6">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 								<article class="block-image">
 									<a href="<?php echo esc_url( get_permalink() ); ?>">
 										<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>

@@ -25,7 +25,7 @@ $the_query = new WP_Query( $args ); ?>
 					while ( $the_query->have_posts() ) :
 						$the_query->the_post();
 						?>
-							<div class="col-sm-12 col-md-6">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 								<article class="block-image">
 									<?php if ( get_field( 'banner_check' ) ) : ?>
 										<span class="block-image__badge"><?php the_field( 'banner_content' ); ?></span>

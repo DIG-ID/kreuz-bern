@@ -22,7 +22,7 @@ get_header(); ?>
 					while ( $rooms_query->have_posts() ) :
 						$rooms_query->the_post();
 						?>
-						<div class="col-12 col-sm-12 col-md-6">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 							<article class="main-block">
 								<?php if ( get_field( 'specials_banner_check' ) ) : ?>
 									<div class="banner__circle"><?php the_field( 'specials_banner_content' ); ?></div>

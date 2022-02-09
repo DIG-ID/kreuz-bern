@@ -14,7 +14,7 @@ get_header(); ?>
 				$gallery_images = get_field( 'gallery_images' );
 				if ( $gallery_images ) : ?>
 						<?php foreach ( $gallery_images as $image_id ) : ?>
-							<div class="col-sm-6 col-md-6 gallery-image-wrapper">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15 gallery-image-wrapper">
 								<a href="<?php echo esc_url( wp_get_attachment_image_url( $image_id, 'gallery-full-image' ) ); ?>" class="gallery-image" data-fancybox="gallery">
 									<?php echo wp_get_attachment_image( $image_id, 'gallery-thumbnail-image' ); ?>
 								</a>

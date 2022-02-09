@@ -10,7 +10,7 @@ get_header(); ?>
 
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 px-15">
 					<section class="google-maps-wrapper">
 						<?php
 							$location = get_field('contact_map');
@@ -23,13 +23,13 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-6">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 					<div class="block block-large">
 						<h3 class="block__title"><?php the_field( 'location_block_title' ); ?></h3>
 						<p class="block__text"><?php the_field( 'location_block_description' ); ?></p>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 					<div class="block block-large">
 						<h3 class="block__title"><?php the_field( 'howto_block_title_copy' ); ?></h3>
 						<p class="block__text"><?php the_field( 'howto_block_description_copy' ); ?></p>
