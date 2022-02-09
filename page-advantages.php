@@ -13,7 +13,7 @@ $advantages_args  = array(
 	'order'     => 'DESC',
 	'orderby'   => 'date',
 );
-$advantages_query = new WP_Query( $offers_args ); ?>
+$advantages_query = new WP_Query( $advantages_args ); ?>
 
 	<?php do_action( 'wrapper_open' ); ?>
 
