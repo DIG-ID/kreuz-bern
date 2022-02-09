@@ -11,7 +11,7 @@ get_header(); ?>
 		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 			<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
 		</video>
-		<div class="booking-bar__container"> 
+		<div class="booking-bar__container">
 			<div id="sb-container"></div>
 		</div>
 	</section>
@@ -83,6 +83,10 @@ get_header(); ?>
 					</section><!-- #main-content__wrapper -->
 				</div><!-- #main-content-->
 				<aside id="main-sidebar" class="col-md-3 col-sm-4 col-xs-12">
+					<div class="block block-inverted percentages__block">
+						<p><?php echo do_shortcode( '[percentages-ca]' ); ?></p>
+						<p class="block__text percentages__text"><?php the_field( 'satisfaction_ratio_block_text' ); ?></p>
+					</div>
 					<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 				</aside><!-- #main-sidebar -->
 			</div><!-- .row -->
