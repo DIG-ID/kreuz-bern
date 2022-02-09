@@ -31,7 +31,7 @@ get_header(); ?>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'zimmer_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'zimmer_block_text' ); ?></p>
-									<div class="main-block__btn-wrapper">
+									<div class="main-block__btn--wrapper">
 										<a href="<?php the_field( 'zimmer_block_details_button_link' ); ?>" class="main-block__btn"><?php the_field( 'zimmer_block_details_button' ); ?></a>
 										<a href="<?php the_field( 'zimmer_block_book_button_link' ); ?>" class="main-block__btn main-block__btn--dark"><?php the_field( 'zimmer_block_book_button' ); ?></a>
 									</div>
@@ -63,7 +63,7 @@ get_header(); ?>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'offers_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'offers_block_text' ); ?></p>
-									<div class="main-block__btn-wrapper">
+									<div class="main-block__btn--wrapper">
 										<a href="<?php the_field( 'offers_block_details_button_link' ); ?>" class="main-block__btn "><?php the_field( 'offers_block_details_button' ); ?></a>
 									</div>
 								</div>
@@ -80,7 +80,7 @@ get_header(); ?>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'restaurant_block_text' ); ?></p>
-									<div class="main-block__btn-wrapper">
+									<div class="main-block__btn--wrapper">
 										<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>" class="main-block__btn"><?php the_field( 'restaurant_block_details_button' ); ?></a>
 									</div>
 								</div>
