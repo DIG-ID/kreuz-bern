@@ -13,11 +13,11 @@ get_header(); ?>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 px-15">
 					<section class="google-maps-wrapper">
 						<?php
-							$location = get_field('contact_map');
-							if( $location ): ?>
-						    <div class="acf-map" data-zoom="16">
-						        <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
-						    </div>
+							$location = get_field( 'contact_map' );
+							if ( $location ) : ?>
+								<div class="acf-map" data-zoom="16">
+									<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
+								</div>
 						<?php endif; ?>
 					</section>
 				</div>
