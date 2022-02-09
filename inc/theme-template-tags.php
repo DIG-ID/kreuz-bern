@@ -58,7 +58,7 @@ function kreuz_open_wrapper() {
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="container px-md-0">
-				<div class="row gx-5">
+				<div class="row">
 	<?php
 }
 

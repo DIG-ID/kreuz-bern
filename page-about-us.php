@@ -19,7 +19,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-6 px-15">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 					<div class="block-image">
 						<?php
 						$history_image = get_field( 'history_block_image' );

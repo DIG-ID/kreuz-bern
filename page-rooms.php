@@ -45,11 +45,13 @@ get_header(); ?>
 									<?php
 								endif;
 								?>
-								<h2 class="main-block__title"><?php the_field( 'title' ); ?></h2>
-								<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
-								<div class="main-block__btn-wrapper">
-									<a href="<?php the_permalink(); ?>"><button class="main-block__btn button button__white"><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></button></a>
-									<a href="<?php the_field( 'book_button_link' ); ?>"><button class="main-block__btn button button__blue"><?php the_field( 'book_button' ); ?></button></a>
+								<div class="main-block__content">
+									<h2 class="main-block__title"><?php the_field( 'title' ); ?></h2>
+									<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
+									<div class="main-block__btn-wrapper">
+										<a href="<?php the_permalink(); ?>" class="main-block__btn "><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>
+										<a href="<?php the_field( 'book_button_link' ); ?>" class="main-block__btn main-block__btn--dark"><?php the_field( 'book_button' ); ?></a>
+									</div>
 								</div>
 							</article>
 						</div>

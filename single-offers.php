@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 px-15">
 					<article class="block-image block-image--two-btns">
 						<?php
 						$offers_banner      = get_field( 'image' );
