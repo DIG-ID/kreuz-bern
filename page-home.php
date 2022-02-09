@@ -44,8 +44,10 @@ get_header(); ?>
 									<div class="banner__circle"><?php the_field( 'hotel_block_banner_content' ); ?></div>
 								<?php endif; ?>
 								<img class="main-block__tpic" alt="hotel picture" src="<?php the_field( 'hotel_block_image' ); ?>">
-								<h2 class="main-block__title"><?php the_field( 'hotel_block_title' ); ?></h2>
-								<p class="main-block__text"><?php the_field( 'hotel_block_text' ); ?></p>
+								<div class="main-block__content">
+									<h2 class="main-block__title"><?php the_field( 'hotel_block_title' ); ?></h2>
+									<p class="main-block__text"><?php the_field( 'hotel_block_text' ); ?></p>
+								</div>
 							</div>
 						</div>
 					</div><!-- .row -->
