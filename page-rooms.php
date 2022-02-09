@@ -48,7 +48,7 @@ get_header(); ?>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
-									<div class="main-block__btn-wrapper">
+									<div class="main-block__btn--wrapper">
 										<a href="<?php the_permalink(); ?>" class="main-block__btn "><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>
 										<a href="<?php the_field( 'book_button_link' ); ?>" class="main-block__btn main-block__btn--dark"><?php the_field( 'book_button' ); ?></a>
 									</div>
@@ -60,9 +60,9 @@ get_header(); ?>
 				endif;
 				wp_reset_postdata();
 				?>
-				<div class="col-md-6">
-					<div class="main-block informations-block">
-						<h2 class="main-block__title inverted-color"><?php the_field( 'informations_title' ); ?></h2>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-15">
+					<div class="main-block main-block__informations main-block--inverted">
+						<h2 class="main-block__title"><?php the_field( 'informations_title' ); ?></h2>
 						<?php the_field( 'informations_content' ); ?>
 					</div>
 				</div>

@@ -8,7 +8,7 @@
  */
 function kreuz_before_main_content() {
 	?>
-	<div id="main-content" class="col-12 col-sm-12 col-md-12 col-lg-9 px-15">
+	<div id="main-content" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 px-15">
 		<section id="main-content__wrapper">
 	<?php
 }
@@ -32,7 +32,8 @@ add_action( 'after_main_content', 'kreuz_after_main_content' );
  */
 function kreuz_before_main_sidebar() {
 	?>
-	<aside id="main-sidebar" class="col-12 col-sm-12 col-md-12 col-lg-3 px-15">
+	<aside id="main-sidebar" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 px-15">
+		<div class="row">
 	<?php
 }
 
@@ -43,6 +44,7 @@ add_action( 'before_main_sidebar', 'kreuz_before_main_sidebar' );
  */
 function kreuz_after_main_sidebar() {
 	?>
+	</div>
 	</aside><!-- #main-sidebar -->
 	<?php
 }

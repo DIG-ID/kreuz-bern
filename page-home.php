@@ -52,7 +52,7 @@ get_header(); ?>
 						</div>
 					</div><!-- .row -->
 					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 							<div class="main-block" id="home__box--3">
 								<?php if ( get_field( 'offers_block_banner_check' ) ) : ?>
 									<div class="banner__circle"><?php the_field( 'offers_block_banner_content' ); ?></div>
@@ -69,7 +69,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 							<div class="main-block" id="home__box--4">
 								<?php if ( get_field( 'resturant_block_banner_check' ) ) : ?>
 									<div class="banner__circle"><?php the_field( 'resturant_block_banner_content' ); ?></div>

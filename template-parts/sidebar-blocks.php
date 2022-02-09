@@ -17,6 +17,7 @@ if ( $sidebar_blocks ) :
 		$block_button_text = get_field( 'block_button_text' );
 
 		?>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 px-15">
 			<div class="<?php echo $block_template; ?>">
 				<h3 class="block__title"><?php the_title(); ?></h3>
 				<p class="block__text"><?php the_field( 'block_text' ); ?></p>
@@ -24,6 +25,7 @@ if ( $sidebar_blocks ) :
 					<a class="block__btn" href="<?php echo esc_url( $block_button_url ); ?>"><?php echo $block_button_text ?></a>
 				<?php endif; ?>
 			</div>
+		</div>
 		<?php
 	endforeach;
 	// Reset the global post object so that the rest of the page works correctly.

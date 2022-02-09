@@ -15,9 +15,9 @@ defined( 'ABSPATH' ) || exit;
 					<?php
 					for ( $x = 1; $x <= 5; $x++ ) {
 						if ( $x != 3 ) :
-							echo '<div class="col-12 col-sm-6 col-md-6 col-lg-2 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
+							echo '<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
 						else :
-							echo '<div class="col-12 col-sm-6 col-md-6 col-lg-2 offset-lg-1 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
+							echo '<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-2 offset-xl-1 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
 						endif;
 					}
 					?>
