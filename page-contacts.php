@@ -12,7 +12,13 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-12">
 					<section class="google-maps-wrapper">
-						<img src="https://via.placeholder.com/958x628/fff.png?text=The+Map+Goes+Here" alt="">
+						<?php
+							$location = get_field('contact_map');
+							if( $location ): ?>
+						    <div class="acf-map" data-zoom="16">
+						        <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
+						    </div>
+						<?php endif; ?>
 					</section>
 				</div>
 			</div>

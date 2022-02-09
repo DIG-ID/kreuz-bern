@@ -82,7 +82,7 @@ get_header(); ?>
 				<?php do_action( 'after_main_content' ); ?>
 				<?php do_action( 'before_main_sidebar' ); ?>
 					<div class="block block-inverted percentages__block">
-						<p><?php echo do_shortcode( '[percentages-ca]' ); ?></p>
+						<?php echo do_shortcode( '[percentages-ca]' ); ?>
 						<p class="block__text percentages__text"><?php the_field( 'satisfaction_ratio_block_text' ); ?></p>
 					</div>
 					<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>

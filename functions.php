@@ -76,3 +76,9 @@ require get_template_directory() . '/inc/theme-template-tags.php';
 
 // Theme customizer options.
 require get_template_directory() . '/inc/customizer.php';
+
+// Google maps
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0');
+}
+add_action('acf/init', 'my_acf_init');
