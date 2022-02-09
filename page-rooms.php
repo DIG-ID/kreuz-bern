@@ -33,7 +33,7 @@ get_header(); ?>
 									?>
 									<div class="swiper-container-rooms">
 										<div class="swiper-wrapper">
-											<?php foreach( $room_sliders as $room_slider ) : ?>
+											<?php foreach ( $room_sliders as $room_slider ) : ?>
 												<a href="<?php echo esc_url( get_permalink() ); ?>" class="swiper-slide">
 													<?php echo wp_get_attachment_image( $room_slider, 'main-block-thumbnail' ); ?>
 												</a>
