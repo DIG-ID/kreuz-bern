@@ -25,13 +25,13 @@ $advantages_query = new WP_Query( $advantages_args ); ?>
 							$advantages_query->the_post();
 							?>
 							<div class="col-sm-12 col-md-6">
-								<article class="block-image block-image--two-btns">
+								<article class="block-image">
 									<a href="<?php echo esc_url( get_permalink() ); ?>">
 										<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
 									</a>
 									<div class="block-image__content">
 										<h2 class="block-image__title"><?php the_title(); ?></h2>
-										<p class="block-image__text"><?php the_content(); ?></p>
+										<div class="block-image__text"><?php the_content(); ?></div>
 									</div>
 								</article><!-- .block-image -->
 							</div><!-- .col -->
