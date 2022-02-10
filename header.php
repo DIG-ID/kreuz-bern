@@ -23,7 +23,7 @@
 
 		<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-				<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+				<nav class="navbar navbar-expand-xl navbar-dark bg-primary">
 
 							<!-- Your site title as branding in the menu -->
 							<?php if ( ! has_custom_logo() ) { ?>

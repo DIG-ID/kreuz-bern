@@ -19,6 +19,7 @@ get_header(); ?>
 						?>
 						<div class="block-image__content">
 							<h1 class="block-image__title"><?php the_title(); ?></h1>
+							<p class="block-image__subtitle"><?php the_field( 'subtitle' ); ?></p>
 							<div class="block-image__text"><?php the_content(); ?></div>
 							<div class="block-image__btn--wrapper">
 								<?php icl_link_to_element( 42, 'post', esc_html__( 'ZURÜCK ZUR ÜBERSICHT', 'kreuz-bern' ) ); ?>
