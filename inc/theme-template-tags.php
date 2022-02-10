@@ -53,13 +53,13 @@ add_action( 'after_main_sidebar', 'kreuz_after_main_sidebar' );
 
 
 /**
- * This function opens the wrapper of all the content.
+ * This function opens the wrapper of all the content. px-md-0
  */
 function kreuz_open_wrapper() {
 	?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="container px-md-0">
+			<div class="container">
 				<div class="row">
 	<?php
 }
