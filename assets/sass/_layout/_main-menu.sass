@@ -17,6 +17,7 @@
     display: block
   .menu-item > a
     display: block
+    outline: 0
     font-family: $titles-font
     text-decoration: none
     text-transform: uppercase
@@ -40,20 +41,22 @@
     height: auto
 
 @media (max-width: $md)
-
   .custom-logo-link
     padding: 15px
     img
       width: 140px
 
   .wpml-ls-legacy-list-horizontal
-    padding: 7px 4px
-    a span
-      color: #000
-      font-family: "WalsheimThin"
-      font-size: 13.6px
-      font-weight: 400
-      letter-spacing: 0.1em
+    padding: 8px
+    a
+      outline: 0
+      padding: 5px 7px
+      span
+        color: #000
+        font-family: "WalsheimThin"
+        font-size: 13.6px
+        font-weight: 400
+        letter-spacing: 0.1em
 
   .wpml-ls-current-language
     span
@@ -73,6 +76,9 @@
         letter-spacing: 0.1em
         padding: 10px 0
         border-bottom: 1px solid #626262
+        outline: 0
+        &:hover
+          border-bottom: 1px solid #626262
     &-toggle
       .icon-bar
         display: block
@@ -85,21 +91,27 @@
   .wpml-ls-legacy-dropdown
     display: none
 
-  .button__booking
-    display: none
+  .button
+    &__booking
+      display: none
 
   .lang-switcher-mobile
     margin-bottom: 25px
+
+  .menu
+    &__container--mobile
+      padding-right: 18px
 
   #navbar-mobile
     border-top: 1px solid #000
 
   #opener
     display: block
+    outline: 0
     background-color: transparent
     position: relative
     float: right
-    padding: 11px 15px
+    padding: 11px 18px
     border: none
     &__menu
       min-height: calc(99vh - 60px)

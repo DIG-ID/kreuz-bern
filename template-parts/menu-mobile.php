@@ -1,4 +1,4 @@
-<div id="opener__menu">
+<div id="opener__menu" class="closed">
 
 <?php
 wp_nav_menu(
@@ -20,7 +20,7 @@ wp_nav_menu(
     <?php dynamic_sidebar( 'lang-switcher-mobile' ); ?>
   </div>
 <?php endif; ?>
-<div class="container">
+<div class="container menu__container--mobile">
   <div class="row">
     <div class="col-6 col-sm-6 col-md-6 col-lg-6 button__tel--wrapper">
       <a href="tel:0041313299595" class="main-block__btn button__menumob"><?php esc_html_e( 'Telefon', 'kreuz-bern' ); ?></a>
