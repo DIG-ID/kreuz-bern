@@ -222,4 +222,14 @@ $(document).ready(function(){
 });
 
 })(jQuery);
+
+/*Open menu script*/
+function menuMobile() {
+  var x = document.getElementById("opener__menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 </script>

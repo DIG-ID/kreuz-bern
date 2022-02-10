@@ -50,7 +50,7 @@ function theme_enqueue_styles() {
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array(), $theme_version, true );
 }
 
-// Register ustom theme sidebar.
+// Register custom theme sidebar.
 add_action( 'widgets_init', 'kreuzbern_register_sidebars' );
 function kreuzbern_register_sidebars() {
 	/* Register the 'footer' sidebar. */
@@ -66,6 +66,22 @@ function kreuzbern_register_sidebars() {
 		)
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
+}
+
+// Custom widget for mobile language switcher
+add_action( 'widgets_init', 'register_custom_language_widget' );
+function register_custom_language_widget() {
+	register_sidebar(
+		array(
+		'id' => 'lang-switcher-mobile',
+		'name' => esc_html__( 'Language Switcher Mobile Widget' ),
+		'description' => esc_html__( 'Widget area for language selector mobile' ),
+		'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => ''
+		)
+	);
 }
 
 // Theme otimizations.

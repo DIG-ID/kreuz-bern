@@ -4,6 +4,10 @@
   width: 100%
   z-index: 999
 
+#opener
+  display: none
+  &__menu
+    display: none
 
 .navbar
   padding-left: 60px
@@ -11,13 +15,12 @@
   .menu-item
     margin: 10px 20px
     display: block
-
   .menu-item > a
     display: block
     font-family: $titles-font
     text-decoration: none
     text-transform: uppercase
-    color:#000000
+    color: #000000
     font-size: 12px
     letter-spacing: .1em
     line-height: 20px
@@ -31,6 +34,77 @@
 .navbar-expand-md .navbar-collapse
   justify-content: center
 
-a.custom-logo-link > img
-  width: 128px
-  height: auto
+.custom-logo-link
+  img
+    width: 128px
+    height: auto
+
+@media (max-width: $md)
+
+  .custom-logo-link
+    padding: 15px
+    img
+      width: 140px
+
+  .wpml-ls-legacy-list-horizontal
+    padding: 7px 4px
+    a span
+      color: #000
+      font-family: "WalsheimThin"
+      font-size: 13.6px
+      font-weight: 400
+      letter-spacing: 0.1em
+
+  .wpml-ls-current-language
+    span
+      text-decoration: underline
+
+  .navbar
+    padding: 0
+    .menu-item
+      margin: 0
+      padding: 0 20px 0 15px
+      a
+        color: #000
+        font-family: "WalsheimThin"
+        font-size: 13.6px
+        font-weight: 400
+        line-height: 19px
+        letter-spacing: 0.1em
+        padding: 10px 0
+        border-bottom: 1px solid #626262
+    &-toggle
+      .icon-bar
+        display: block
+        width: 22px
+        height: 2px
+        margin-top: 4px
+        border-radius: 1px
+        background-color: #000
+
+  .wpml-ls-legacy-dropdown
+    display: none
+
+  .button__booking
+    display: none
+
+  .lang-switcher-mobile
+    margin-bottom: 25px
+
+  #navbar-mobile
+    border-top: 1px solid #000
+
+  #opener
+    display: block
+    background-color: transparent
+    position: relative
+    float: right
+    padding: 11px 15px
+    border: none
+    &__menu
+      min-height: calc(99vh - 60px)
+      margin-top: 8px
+      flex-basis: 100%
+      flex-grow: 1
+      align-items: center
+      background-color: #ebf0f0

@@ -43,9 +43,11 @@
 								the_custom_logo();
 							} ?><!-- end custom logo -->
 
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+							<button id="opener" type="button" class="navbar-toggle" onclick="menuMobile()">
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+		          </button>
 
 						<!-- The WordPress Menu goes here -->
 						<?php
@@ -65,9 +67,10 @@
 						<div id="bookingbar-content" style="display:none;min-height: 350px;max-width:1100px;width:100%">
 							<div class="buchen__title"><?php esc_html_e( 'DIREKT BUCHEN UND SPAREN', 'kreuz-bern' ); ?></div>
 							<div id="sb-container-bar-de"></div>
-						</div> 
+						</div>
 						<?php do_action( 'wpml_add_language_selector' ); ?>
 					<button data-fancybox="dialog" data-src="#bookingbar-content" class="button button__blue button__booking"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
+					<?php get_template_part( 'template-parts/menu-mobile' ); ?>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->

@@ -39,7 +39,7 @@ defined( 'ABSPATH' ) || exit;
 
 		</div><!-- #page we need this extra closing tag here -->
 		<?php get_template_part( 'template-parts/simple-booking-script' ); ?>
-		<?php get_template_part( 'template-parts/google-maps' ); ?>
+		<?php get_template_part( 'template-parts/maps-menu' ); ?>
 		<?php wp_footer(); ?>
 	</body>
 
