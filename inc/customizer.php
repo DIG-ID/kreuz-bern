@@ -22,10 +22,7 @@ function kreuz_customizer_register( $wp_customize ) {
 	);
 
 	require get_parent_theme_file_path( '/inc/customizer/footer.php' );
-	//require get_parent_theme_file_path( '/inc/customizer/product-settings.php' );
-	//require get_parent_theme_file_path( '/inc/customizer/news-archive.php' );
-	//require get_parent_theme_file_path( '/inc/customizer/forms-settings.php' );
-	//require get_parent_theme_file_path( '/inc/customizer/cookie-settings.php' );
+	require get_parent_theme_file_path( '/inc/customizer/socials.php' );
 
 }
 add_action( 'customize_register', 'kreuz_customizer_register' );

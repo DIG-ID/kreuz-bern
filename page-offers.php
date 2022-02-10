@@ -30,7 +30,7 @@ $offers_query = new WP_Query( $offers_args ); ?>
 										<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
 									</a>
 									<div class="block-image__content">
-										<h2 class="block-image__title"><?php the_field( 'title' ); ?></h2>
+										<h2 class="block-image__title"><?php the_title(); ?></h2>
 										<p class="block-image__text"><?php the_field( 'description' ); ?></p>
 										<div class="block-image__btn--wrapper">
 											<a class="block-image__btn" href="<?php echo esc_url( get_permalink() ); ?>"><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>

@@ -34,7 +34,7 @@ $the_query = new WP_Query( $args ); ?>
 										<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
 									</a>
 									<div class="block-image__content">
-										<h2 class="block-image__title"><?php the_field( 'title' ); ?></h2>
+										<h2 class="block-image__title"><?php the_title(); ?></h2>
 										<span class="block-image__subtitle" ><?php the_field( 'subtitle' ); ?></span>
 										<p class="block-image__text"><?php the_field( 'description' ); ?></p>
 										<a class="block-image__btn" href="<?php the_field( 'details_button_link' ); ?>" target="_blank"><?php the_field( 'details_button' ); ?></a>

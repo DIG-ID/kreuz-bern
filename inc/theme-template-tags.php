@@ -59,7 +59,7 @@ function kreuz_open_wrapper() {
 	?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="container">
+			<div class="container ">
 				<div class="row">
 	<?php
 }
@@ -80,3 +80,32 @@ function kreuz_close_wrapper() {
 
 add_action( 'wrapper_close', 'kreuz_close_wrapper' );
 
+/**
+ * Get our socials from the theme customizer and display them.
+ */
+function kreuz_socials() {
+	echo '<div class="socials-wrapper">';
+	$facebook_url  = get_theme_mod( 'facebook_url' );
+	$linkedin_url  = get_theme_mod( 'linkedin_url' );
+	$twitter_url   = get_theme_mod( 'twitter_url' );
+	$youtube_url   = get_theme_mod( 'youtube_url' );
+	$instagram_url = get_theme_mod( 'instagram_url' );
+	if ( ! empty( $facebook_url ) ) :
+		echo '<a href="' , esc_url( $facebook_url ) , '" target="_blank" class="social-link social-link__facebook"><i class="fa-brands fa-facebook-f"></i></a>';
+	endif;
+	if ( ! empty( $instagram_url ) ) :
+		echo '<a href="' , esc_url( $instagram_url ) , '" target="_blank" class="social-link social-link__instagram"><i class="fa-brands fa-instagram"></i></a>';
+	endif;
+	if ( ! empty( $linkedin_url ) ) :
+		echo '<a href="' , esc_url( $linkedin_url ) , '" target="_blank" class="social-link social-link__linkedin"><i class="fa-brands fa-linkedin"></i></a>';
+	endif;
+	if ( ! empty( $youtube_url ) ) :
+		echo '<a href="' , esc_url( $youtube_url ) , '" target="_blank" class="social-link social-link__youtube"><i class="fa-brands fa-youtube"></i></a>';
+	endif;
+	if ( ! empty( $twitter_url ) ) :
+		echo '<a href="' , esc_url( $twitter_url ) , '" target="_blank" class="social-link social-link__twitter"><i class="fa-brands fa-twitter"></i></a>';
+	endif;
+	echo '</div>';
+}
+
+add_action( 'socials', 'kreuz_socials' );

@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="container">
 				<div class="row">
 					<?php
-					for ( $x = 1; $x <= 5; $x++ ) {
+					for ( $x = 1; $x <= 4; $x++ ) {
 						if ( $x != 3 ) :
 							echo '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
 						else :
@@ -21,6 +21,10 @@ defined( 'ABSPATH' ) || exit;
 						endif;
 					}
 					?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
+						<span class="footer-block__title"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?></span>
+						<?php do_action( 'socials' ); ?>
+					</div>
 				</div><!-- row end -->
 				<div class="row align-items-center justify-content-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxxl-none">
 					<div class="col-12 px-15">

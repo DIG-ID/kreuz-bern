@@ -19,8 +19,6 @@ function kreuzbern_setup() {
 
 	add_theme_support( 'post-thumbnails' );
 
-	add_theme_support( 'wp-block-styles' );
-
 	add_theme_support( 'widgets-block-editor' );
 
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -37,6 +35,29 @@ function kreuzbern_setup() {
 
 }
 
+if ( ! function_exists( 'kreuz_preload_webfonts' ) ) :
+
+	/**
+	 * Preloads the main web font to improve performance.
+	 *
+	 * Only the main web font (font-style: normal) is preloaded here since that font is always relevant (it is used
+	 * on every heading, for example). The other font is only needed if there is any applicable content in italic style,
+	 * and therefore preloading it would in most cases regress performance when that font would otherwise not be loaded
+	 * at all.
+	 *
+	 */
+	function kreuz_preload_webfonts() {
+		?>
+		<!--<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( '/assets/fonts/GT-Sectra-Fine-Bold.woff' ) ); ?>" as="font" type="font/woff" crossorigin>-->
+		<!--<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( '/assets/fonts/GT-Walsheim-Thin.woff' ) ); ?>" as="font" type="font/woff" crossorigin>-->
+		<script src="https://kit.fontawesome.com/eb1cd80e07.js" crossorigin="anonymous"></script>
+		<?php
+	}
+
+endif;
+
+//add_action( 'wp_head', 'kreuz_preload_webfonts' );
+
 // Enqueue styles and scripts
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
@@ -48,6 +69,7 @@ function theme_enqueue_styles() {
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/build/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array(), $theme_version, true );
+	wp_enqueue_script( 'fontawesome-kit', 'https://kit.fontawesome.com/eb1cd80e07.js', array(), $theme_version, false );
 }
 
 // Register custom theme sidebar.

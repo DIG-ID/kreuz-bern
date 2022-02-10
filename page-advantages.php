@@ -31,7 +31,7 @@ $advantages_query = new WP_Query( $advantages_args ); ?>
 									</a>
 									<div class="block-image__content">
 										<h2 class="block-image__title"><?php the_title(); ?></h2>
-										<div class="block-image__text"><?php the_content(); ?></div>
+										<div class="block-image__text"><?php the_field( 'description' ); ?></div>
 									</div>
 								</article><!-- .block-image -->
 							</div><!-- .col -->

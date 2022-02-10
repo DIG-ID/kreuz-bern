@@ -46,7 +46,7 @@ get_header(); ?>
 								endif;
 								?>
 								<div class="main-block__content">
-									<h2 class="main-block__title"><?php the_field( 'title' ); ?></h2>
+									<h2 class="main-block__title"><?php the_title(); ?></h2>
 									<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
 									<div class="main-block__btn--wrapper">
 										<a href="<?php the_permalink(); ?>" class="main-block__btn "><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>
