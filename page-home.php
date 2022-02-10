@@ -16,7 +16,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<main id="main" class="site-main" role="main">
-		<div class="container px-md-0">
+		<div class="container">
 			<div class="row">
 				<?php do_action( 'before_main_content' ); ?>
 					<div class="row">
