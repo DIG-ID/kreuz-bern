@@ -1,110 +1,96 @@
-.percentagesCA-reviews ul
-  list-style:	none!important
-
-
-.percentagesCA-reviews ul li
-  list-style:	none!important
-
-
-li.percentagesCA-review
-  list-style:	none!important
-  width: 100%
+.percentagesCA-reviews
+  ul
+    list-style:	none
+    li
+      list-style:	none
+  .percentagesCA-review
+    list-style:	none
+    width: 100%
 
 .percentagesCA_box
   width: 100%
-  max-width: 400px
   min-width: 240px
   display: block
   min-height: 100px
   background: white
-  border: 0
-  border-color: #e5e5e5 #dbdbdb #d2d2d2
-  border-radius: 0px
   font-size: 16px
   line-height: 1.2em
-  font-family: Helvetica, Arial, Verdana, sans-serif
+  font-family: $primary-font
+  .adjective
+    box-sizing: border-box
+    width: 100%
+    height: 100%
+    padding: 10px 5px 5px 5px
+    font-size: 18px
+    font-weight: 700
+    font-family: $primary-font
+    color: #343434
+    border-left: 0px solid #dadada
+    text-align: center
+    -webkit-font-smoothing: antialiased
+  .percentage
+    width: 100%
+    height: 100%
+    padding: 5px
+    font-size: 34px
+    font-family: $primary-font
+    color: #343434
+    border-left: 0px solid #dadada
+    text-align: center
+    -webkit-font-smoothing: antialiased
+  .more
+    width: 100%
+    padding: 10px
+    color: $primary-color
+    border-left: 0px solid #dadada
+    text-align: center
+    
+    a
+      font-size: 14px
+      font-family: $primary-font
+      text-decoration: none
+      line-height: 1.2em
+      -webkit-font-smoothing: antialiased
+      color: $primary-color
 
-
-.percentagesCA_box .adjective
-  box-sizing: border-box
-  width: 100%
-  height: 100%
-  padding: 10px 5px 5px 5px
-  font-size: 18px
-  font-weight: bold
-  font-family: Helvetica, Arial, Verdana, sans-serif
-  color: #343434
-  border-left: 0px solid #dadada
-  text-align: center
-
-
-.percentagesCA_box .percentage
-  box-sizing: border-box
-  width: 100%
-  height: 100%
-  padding: 5px
-  font-size: 34px
-  font-family: Helvetica, Arial, Verdana, sans-serif
-  color: #343434
-  border-left: 0px solid #dadada
-  text-align: center
-
-
-.percentagesCA_box .more
-  box-sizing: border-box
-  width: 100%
-  height: 100%
-  padding: 10px
-  font-size: 14px
-  line-height: 1.2em
-  font-family: Helvetica, Arial, Verdana, sans-serif
-  color: #3b62b2
-  border-left: 0px solid #dadada
-  text-align: center
-
-.percentagesCA_box .more2
-  box-sizing: border-box
-  width: 100%
-  height: 100%
-  font-size: 16px
-  line-height: 1.2em
-  font-family: Helvetica, Arial, Verdana, sans-serif
-  color: #343434
-  border-left: 0px solid #dadada
-  text-align: center
-
-
-.percentagesCA_box .more2 img
-  width: 25px
-
+  .more2
+    width: 100%
+    height: 100%
+    font-size: 16px
+    line-height: 1.2em
+    font-family: Helvetica, Arial, Verdana, sans-serif
+    color: #343434
+    border-left: 0px solid #dadada
+    text-align: center
+    img
+     width: 25px
 
 .dv-left
   display: inline-block
   text-align: center
   width: 50%
-  box-sizing: border-box
   float: left
-
 
 .dv-right
   width: 40%
   float: right
   box-sizing: border-box
 
-
 .dv-title
   width: 100%
   height: 100%
-  padding: 4px
+  padding: 6px 0
   font-size: 14px
   line-height: 1.4em
   border: 0
   border-radius: 0
-  font-family: Helvetica, Arial, Verdana, sans-serif
+  font-family: $titles-font
   color: #FFFFFF
   background-color: #203b54
   text-align: center
-
+  -webkit-font-smoothing: antialiased
+  text-transform: uppercase
+  letter-spacing: 0.06em
 
 .percentages
   &__block

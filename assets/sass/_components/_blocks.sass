@@ -250,7 +250,6 @@
   height: 630px
   max-height: 630px
 
-
 .rooms-template-default
   .block-image--slider
     min-height: 960px
@@ -264,6 +263,11 @@
 @media (max-width: $lg)
   .block-image,
   .main-block
+    min-height: auto
+    img
+      height: auto
+    &__content
+      padding: 22px
     &__text
       margin-bottom: 20px
     &__btn--dark

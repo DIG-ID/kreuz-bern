@@ -19,6 +19,9 @@ if ( $sidebar_blocks ) :
 		?>
 		<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 px-15">
 			<div class="<?php echo $block_template; ?>">
+				<?php if ( get_field( 'block_banner_check' ) ) : ?>
+					<span class="block__badge"><?php the_field( 'block_banner_content' ); ?></span>
+				<?php endif; ?>
 				<h3 class="block__title"><?php the_title(); ?></h3>
 				<p class="block__text"><?php the_field( 'block_text' ); ?></p>
 				<?php if ( $block_button_url && $block_button_text ) : ?>

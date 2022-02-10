@@ -48,7 +48,7 @@ $the_query = new WP_Query( $args ); ?>
 				?>
 			</div><!-- .row -->
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 px-15">
 					<section class="google-maps-wrapper">
 						<?php if ( have_rows( 'locations' ) ) : ?>
 							<div class="acf-map map-attractions" data-zoom="16">

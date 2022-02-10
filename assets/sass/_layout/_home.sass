@@ -2,8 +2,7 @@
 
 .home-banner
   position: relative
-  padding-left: 60px
-  padding-right: 60px
+  padding: 0 60px
   background-color: #ffffff
   max-height: 100vh
   overflow: hidden
@@ -13,7 +12,15 @@
 
 @media (max-width: $md)
   .home-banner
-    height: 40vh
+    height: 63vh
+    padding: 0 60px
+    video
+      margin-top: 55px
+
+@media (max-width: $sm)
+  .home-banner
+    height: 46vh
+    padding: 0 15px
     video
       margin-top: 55px
 

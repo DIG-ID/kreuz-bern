@@ -22,6 +22,11 @@ defined( 'ABSPATH' ) || exit;
 					}
 					?>
 				</div><!-- row end -->
+				<div class="row align-items-center justify-content-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxxl-none">
+					<div class="col-12 px-15">
+						<p> <a class="footer-contact-number" href="tel:+41313299595">TEL + 41 31 329 95 95</a></p>
+					</div>
+				</div>
 				<div class="row justify-content-center">
 					<div class="col-1">
 						<a class="scrollToTop" href="javascript:void(0);">
