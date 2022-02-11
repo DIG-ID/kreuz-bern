@@ -13,6 +13,7 @@ get_header(); ?>
 		</video>
 		<div class="booking-bar__container">
 			<div id="sb-container"></div>
+			<button data-fancybox="dialog" data-src="#bookingbar-contents" class="button button__blue button__booking button__mobile"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
 		</div>
 	</section>
 	<main id="main" class="site-main" role="main">
