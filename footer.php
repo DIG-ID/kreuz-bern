@@ -11,13 +11,13 @@ defined( 'ABSPATH' ) || exit;
 ?>
 		<footer id="footer-wrapper">
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-between align-items-start">
 					<?php
 					for ( $x = 1; $x <= 4; $x++ ) {
 						if ( $x != 3 ) :
 							echo '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
 						else :
-							echo '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 offset-xl-1 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
+							echo '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 offset-xl-1-no-set px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
 						endif;
 					}
 					?>
