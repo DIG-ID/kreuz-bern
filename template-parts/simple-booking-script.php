@@ -23,6 +23,42 @@
 		}
 	});
 	SBSyncroBox({
+		CodLang: 'EN',
+		Currency: 'CHF',
+		MainContainerId: 'sb-container-en',
+		Styles: {
+			FontFamily: '"WalsheimThin", cursive, sans-serif',
+			Theme: 'light-pink',
+			CustomColor: "#000000",
+			CustomLabelColor:"#000000",
+			CustomBGColor: "#FFF",
+			CustomButtonColor: "#FFF",
+			CustomButtonBGColor: "#263a54",
+			CustomIntentSelectionDaysBGColor: "#263a54",
+			CustomIntentSelectionColor: "#263a54",
+			CustomIconColor: "#263a54",
+			CustomButtonHoverBGColor:"#263a54"
+		}
+	});
+	SBSyncroBox({
+		CodLang: 'FR',
+		Currency: 'CHF',
+		MainContainerId: 'sb-container-fr',
+		Styles: {
+			FontFamily: '"WalsheimThin", cursive, sans-serif',
+			Theme: 'light-pink',
+			CustomColor: "#000000",
+			CustomLabelColor:"#000000",
+			CustomBGColor: "#FFF",
+			CustomButtonColor: "#FFF",
+			CustomButtonBGColor: "#263a54",
+			CustomIntentSelectionDaysBGColor: "#263a54",
+			CustomIntentSelectionColor: "#263a54",
+			CustomIconColor: "#263a54",
+			CustomButtonHoverBGColor:"#263a54"
+		}
+	});
+	SBSyncroBox({
 		CodLang: 'DE',
 		Currency: 'CHF',
 		MainContainerId: 'sb-container-bar-de',
@@ -51,42 +87,6 @@
 			CustomWidgetBGColor:"#FFFFFF",
 			CustomSelectedDaysColor:"#FFFFFF",
 			CustomCalendarBackgroundColor:"#FFFFFF"
-		}
-	});
-	SBSyncroBox({
-		CodLang: 'EN',
-		Currency: 'CHF',
-		MainContainerId: 'sb-container-bar-en',
-		Styles: {
-			FontFamily: '"WalsheimThin", cursive, sans-serif',
-			Theme: 'light-pink',
-			CustomColor: "#000000",
-			CustomLabelColor:"#000000",
-			CustomBGColor: "#FFF",
-			CustomButtonColor: "#FFF",
-			CustomButtonBGColor: "#263a54",
-			CustomIntentSelectionDaysBGColor: "#263a54",
-			CustomIntentSelectionColor: "#263a54",
-			CustomIconColor: "#263a54",
-			CustomButtonHoverBGColor:"#263a54"
-		}
-	});
-	SBSyncroBox({
-		CodLang: 'FR',
-		Currency: 'CHF',
-		MainContainerId: 'sb-container-bar-fr',
-		Styles: {
-			FontFamily: '"WalsheimThin", cursive, sans-serif',
-			Theme: 'light-pink',
-			CustomColor: "#000000",
-			CustomLabelColor:"#000000",
-			CustomBGColor: "#FFF",
-			CustomButtonColor: "#FFF",
-			CustomButtonBGColor: "#263a54",
-			CustomIntentSelectionDaysBGColor: "#263a54",
-			CustomIntentSelectionColor: "#263a54",
-			CustomIconColor: "#263a54",
-			CustomButtonHoverBGColor:"#263a54"
 		}
 	});
 </script>

@@ -31,7 +31,7 @@ wp_nav_menu(
   </div>
   <div class="row">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 px-15 button__booking--wrapper">
-      <button data-fancybox="dialog" data-src="#bookingbar-content" class="main-block__btn main-block__btn--dark button__menumob"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
+      <a href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=DE" target="_blank" class="main-block__btn main-block__btn--dark button__menumob"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></a>
     </div>
   </div>
 </div>
