@@ -16,8 +16,8 @@ function kreuz_customizer_register( $wp_customize ) {
 			'priority'       => 20,
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
-			'title'          => __( 'Kreuz Bern Theme Options', 'kreuzbern' ),
-			'description'    => __( 'Theme options for the Kreuz Bern Theme', 'kreuzbern' ),
+			'title'          => __( 'Kreuz Bern Theme Options', 'kreuz-bern' ),
+			'description'    => __( 'Theme options for the Kreuz Bern Theme', 'kreuz-bern' ),
 		)
 	);
 
