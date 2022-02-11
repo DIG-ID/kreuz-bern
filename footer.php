@@ -12,15 +12,18 @@ defined( 'ABSPATH' ) || exit;
 		<footer id="footer-wrapper">
 			<div class="container">
 				<div class="row justify-content-between align-items-start">
-					<?php
-					for ( $x = 1; $x <= 4; $x++ ) {
-						if ( $x != 3 ) :
-							echo '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
-						else :
-							echo '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 offset-xl-1-no-set px-15 footer-block">' . wp_kses_post( get_theme_mod( 'block-' . $x ) ) . '</div>';
-						endif;
-					}
-					?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-1' ) ); ?>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-2' ) ); ?>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-3' ) ); ?>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-4' ) ); ?>
+					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
 						<span class="footer-block__title"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?></span>
 						<?php do_action( 'socials' ); ?>
