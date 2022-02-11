@@ -12,7 +12,10 @@ get_header(); ?>
 			<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
 		</video>
 		<div class="booking-bar__container">
-			<div id="sb-container"></div>
+			<?php if(ICL_LANGUAGE_CODE=='de'): ?><div id="sb-container"></div>
+			<?php elseif(ICL_LANGUAGE_CODE=='en'): ?><div id="sb-container-en"></div>
+			<?php elseif(ICL_LANGUAGE_CODE=='en'): ?><div id="sb-container-fr"></div>
+			<?php endif; ?>
 			<button data-fancybox="dialog" data-src="#bookingbar-contents" class="button button__blue button__booking button__mobile"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
 		</div>
 	</section>
