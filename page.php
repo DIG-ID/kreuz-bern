@@ -19,7 +19,7 @@ get_header(); ?>
 			</div><!-- .row -->
 		<?php do_action( 'after_main_content' ); ?>
 
-		<?php do_action( 'befor_main_sidebar' ); ?>
+		<?php do_action( 'before_main_sidebar' ); ?>
 			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 		<?php do_action( 'after_main_sidebar' ); ?>
 
