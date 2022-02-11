@@ -17,7 +17,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<main id="main" class="site-main" role="main">
-		<h1 class="screen-reader-text"><?php echo get_bloginfo( 'name' ); ?></h1>
+		<h1 class="screen-reader-text"><?php echo esc_html( get_bloginfo( 'name' ) . ' - ' . get_bloginfo( 'description' ) ); ?></h1>
 		<div class="container">
 			<div class="row">
 				<?php do_action( 'before_main_content' ); ?>

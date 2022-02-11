@@ -65,11 +65,11 @@ function theme_enqueue_styles() {
 	// Get the theme data
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, $theme_version, 'all' );
+	//wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, $theme_version, 'all' );
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/build/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array(), $theme_version, true );
-	wp_enqueue_script( 'fontawesome-kit', 'https://kit.fontawesome.com/eb1cd80e07.js', array(), $theme_version, false );
+	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'fontawesome-kit', 'https://kit.fontawesome.com/eb1cd80e07.js', array( 'jquery' ), $theme_version, true );
 }
 
 // Register custom theme sidebar.
