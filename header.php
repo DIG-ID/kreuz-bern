@@ -64,12 +64,12 @@
 							)
 						);
 						?>
-						<div id="bookingbar-content" style="display:none;min-height: 350px;max-width:1100px;width:100%">
+						<div id="bookingbar-contents" style="display:none;min-height: 350px;max-width:1100px;width:100%;overflow:visible;">
 							<div class="buchen__title"><?php esc_html_e( 'DIREKT BUCHEN UND SPAREN', 'kreuz-bern' ); ?></div>
 							<div id="sb-container-bar-de"></div>
 						</div>
 						<?php do_action( 'wpml_add_language_selector' ); ?>
-					<button data-fancybox="dialog" data-src="#bookingbar-content" class="button button__blue button__booking"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
+					<button data-fancybox="dialog" data-src="#bookingbar-contents" class="button button__blue button__booking button__desktop"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
 					<?php get_template_part( 'template-parts/menu-mobile' ); ?>
 				</nav><!-- .site-navigation -->
 

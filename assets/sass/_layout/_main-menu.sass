@@ -9,6 +9,10 @@
   &__menu
     display: none
 
+.button
+  &__mobile
+    display: none
+
 .navbar
   padding-left: 60px
   padding-right: 60px
@@ -39,6 +43,11 @@
   img
     width: 128px
     height: auto
+
+@media (max-width: $xxl)
+  .navbar
+    .menu-item
+      margin: 10px
 
 @media (max-width: $xl)
   .custom-logo-link
@@ -88,12 +97,25 @@
         border-radius: 1px
         background-color: #000
 
+  .main-block
+    &__btn--dark
+      margin-left: 0
+      margin-top: 10px
+
   .wpml-ls-legacy-dropdown
     display: none
 
   .button
-    &__booking
+    &__desktop
       display: none
+    &__mobile
+      display: block
+      width: 100%
+
+  .booking-bar
+    &__container
+      width: 100%
+      padding: 5px 15px
 
   .lang-switcher-mobile
     margin-bottom: 25px
@@ -101,6 +123,9 @@
   .menu
     &__container--mobile
       padding-right: 18px
+
+  #sb-container
+    display: none
 
   #navbar-mobile
     border-top: 1px solid #000
@@ -120,8 +145,3 @@
       flex-grow: 1
       align-items: center
       background-color: #ebf0f0
-
-@media (max-width: $xxl)
-  .navbar
-    .menu-item
-      margin: 10px

@@ -29,15 +29,28 @@
 		Styles: {
 			FontFamily: '"WalsheimThin", cursive, sans-serif',
 			Theme: 'light-pink',
-			CustomColor: "#000000",
-			CustomLabelColor:"#000000",
-			CustomBGColor: "#FFF",
+			CustomColor: "#263a54",
+			CustomLabelColor:"#263a54",
 			CustomButtonColor: "#FFF",
 			CustomButtonBGColor: "#263a54",
 			CustomIntentSelectionDaysBGColor: "#263a54",
 			CustomIntentSelectionColor: "#263a54",
 			CustomIconColor: "#263a54",
-			CustomButtonHoverBGColor:"#263a54"
+			CustomButtonHoverBGColor:"#263a54",
+			CustomButtonHoverBGColor:"#263a54",
+			CustomBoxShadowColor: "#263a54",
+			CustomLabelHoverColor:"#263a54",
+			CustomButtonBGColor:"#263a54",
+			CustomIconColor:"#263a54",
+			CustomLinkColor:"#263a54",
+			CustomBoxShadowColorFocus:"#263a54",
+			CustomAddRoomBoxShadowColor:"#263a54",
+			CustomAccentColor:"#263a54",
+			CustomBGColor:"#FFFFFF",
+			CustomFieldBackgroundColor:"#FFFFFF",
+			CustomWidgetBGColor:"#FFFFFF",
+			CustomSelectedDaysColor:"#FFFFFF",
+			CustomCalendarBackgroundColor:"#FFFFFF"
 		}
 	});
 	SBSyncroBox({
