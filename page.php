@@ -11,7 +11,7 @@ get_header(); ?>
 				<div class="col-12">
 					<article class="block-image block-image--wide">
 						<div class="block-image__content">
-							<h1 class="block-image__title screen-reader-text"><?php the_title(); ?></h1>
+							<h1 class="block-image__title"><?php the_title(); ?></h1>
 							<?php the_content(); ?>
 						</div>
 					</article>
