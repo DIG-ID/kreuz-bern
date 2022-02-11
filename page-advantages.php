@@ -14,9 +14,9 @@ $advantages_args  = array(
 	'orderby'   => 'date',
 );
 $advantages_query = new WP_Query( $advantages_args ); ?>
-
-	<?php do_action( 'wrapper_open' ); ?>
 	<h1 class="screen-reader-text"><?php the_title(); ?></h1>
+	<?php do_action( 'wrapper_open' ); ?>
+
 		<?php do_action( 'before_main_content' ); ?>
 				<div class="row">
 					<?php

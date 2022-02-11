@@ -6,8 +6,8 @@
  */
 
 get_header(); ?>
+	<h1 class="screen-reader-text"><?php the_title(); ?></h1>
 	<?php do_action( 'wrapper_open' ); ?>
-		<h1 class="screen-reader-text"><?php the_title(); ?></h1>
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
 				<?php
