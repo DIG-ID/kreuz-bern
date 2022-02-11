@@ -16,7 +16,7 @@ $advantages_args  = array(
 $advantages_query = new WP_Query( $advantages_args ); ?>
 
 	<?php do_action( 'wrapper_open' ); ?>
-	<h1 class="main-page-title"><?php the_title(); ?></h1
+	<h1 class="screen-reader-text"><?php the_title(); ?></h1>
 		<?php do_action( 'before_main_content' ); ?>
 				<div class="row">
 					<?php
