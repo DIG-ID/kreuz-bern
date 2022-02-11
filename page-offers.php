@@ -16,7 +16,7 @@ $offers_args  = array(
 $offers_query = new WP_Query( $offers_args ); ?>
 
 	<?php do_action( 'wrapper_open' ); ?>
-
+		<h1 class="main-page-title"><?php the_title(); ?></h1
 		<?php do_action( 'before_main_content' ); ?>
 				<div class="row">
 					<?php
