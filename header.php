@@ -21,8 +21,6 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-110180671-1');
 		</script>
-		<!-- Hotels Network Script -->
-		<script defer src="https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775" async></script>
 
 		<?php wp_head(); ?>
 

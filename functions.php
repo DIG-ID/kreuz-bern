@@ -50,7 +50,6 @@ if ( ! function_exists( 'kreuz_preload_webfonts' ) ) :
 		?>
 		<!--<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( '/assets/fonts/GT-Sectra-Fine-Bold.woff' ) ); ?>" as="font" type="font/woff" crossorigin>-->
 		<!--<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( '/assets/fonts/GT-Walsheim-Thin.woff' ) ); ?>" as="font" type="font/woff" crossorigin>-->
-		<script src="https://kit.fontawesome.com/eb1cd80e07.js" crossorigin="anonymous"></script>
 		<?php
 	}
 
@@ -69,6 +68,7 @@ function theme_enqueue_styles() {
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/build/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, true );
 }
 
 // Custom widget for mobile language switcher
@@ -76,13 +76,13 @@ add_action( 'widgets_init', 'register_custom_language_widget' );
 function register_custom_language_widget() {
 	register_sidebar(
 		array(
-		'id' => 'lang-switcher-mobile',
-		'name' => esc_html__( 'Language Switcher Mobile Widget' ),
-		'description' => esc_html__( 'Widget area for language selector mobile' ),
+		'id'            => 'lang-switcher-mobile',
+		'name'          => esc_html__( 'Language Switcher Mobile Widget' ),
+		'description'   => esc_html__( 'Widget area for language selector mobile' ),
 		'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '',
-		'after_title' => ''
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
 		)
 	);
 }
@@ -91,7 +91,9 @@ function register_custom_language_widget() {
 function my_acf_init() {
 	acf_update_setting( 'google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0' );
 }
-add_action( 'acf/init', 'my_acf_init' );
+if ( is_page_template( array( 'page-attractions.php', 'page-contacts.php' ) ) ) :
+	add_action( 'acf/init', 'my_acf_init' );
+endif;
 
 // Theme otimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';

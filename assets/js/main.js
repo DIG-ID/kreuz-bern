@@ -5,3 +5,4 @@ require('bootstrap');
 import "./custom/swiper";
 import "./custom/fancybox";
 import "./custom/scrolltop";
+import "./custom/simpleBooking";
