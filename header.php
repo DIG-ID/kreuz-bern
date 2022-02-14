@@ -22,7 +22,7 @@
 			gtag('config', 'UA-110180671-1');
 		</script>
 		<!-- Hotels Network Script -->
-		<script src="https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775" async></script>
+		<script defer src="https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775" async></script>
 
 		<?php wp_head(); ?>
 
@@ -55,10 +55,10 @@
 							} ?><!-- end custom logo -->
 
 							<button id="opener" type="button" class="navbar-toggle" onclick="menuMobile()">
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-		          </button>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
 
 						<!-- The WordPress Menu goes here -->
 						<?php

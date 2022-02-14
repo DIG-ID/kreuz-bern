@@ -1,3 +1,5 @@
+<?php if ( is_page_template( array( 'page-attractions.php', 'page-contacts.php' ) ) ) : ?>
+
 <style type="text/css">
 .acf-map {
     width: 100%;
@@ -11,8 +13,8 @@
    max-width: inherit !important;
 }
 </style>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0"></script>
-<script type="text/javascript">
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0"></script>
+<script defer type="text/javascript">
 (function( $ ) {
 
 /**
@@ -256,3 +258,4 @@ function menuMobile() {
 })(jQuery);
 
 </script>
+<?php endif;

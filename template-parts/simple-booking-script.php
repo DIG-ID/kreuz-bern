@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script defer type="text/javascript">
 	(function (i, s, o, g, r, a, m) {
 		i['SBSyncroBoxParam'] = r; i[r] = i[r] || function () {
 				(i[r].q = i[r].q || []).push(arguments)

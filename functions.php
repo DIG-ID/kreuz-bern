@@ -69,25 +69,6 @@ function theme_enqueue_styles() {
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/build/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array( 'jquery' ), $theme_version, true );
-	wp_enqueue_script( 'fontawesome-kit', 'https://kit.fontawesome.com/eb1cd80e07.js', array( 'jquery' ), $theme_version, true );
-}
-
-// Register custom theme sidebar.
-add_action( 'widgets_init', 'kreuzbern_register_sidebars' );
-function kreuzbern_register_sidebars() {
-	/* Register the 'footer' sidebar. */
-	register_sidebar(
-		array(
-			'id'            => 'footer-widgets',
-			'name'          => __( 'Footer Widgets' ),
-			'description'   => __( 'Widgets that appears on the footer of the website.' ),
-			'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		)
-	);
-	/* Repeat register_sidebar() code for additional sidebars. */
 }
 
 // Custom widget for mobile language switcher

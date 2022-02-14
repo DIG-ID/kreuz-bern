@@ -8,22 +8,25 @@
 .socials-wrapper
   display: flex
   justify-content: center
-  a
+  .social-link
     transtion: all .3s ease-in-out
     margin: 0px 10px
     border-bottom: 1px solid transparent
+    svg
+      //width: 20px
+      padding: 2px
+      height: 20px
+      fill: #9a9a9a
+      transtion: all .3s ease-in-out
     &:first-child
       margin-left: 0
     &:last-child
       margin-right: 0
-    i
-      font-size: 20px
-      color: #9a9a9a
-      transtion: all .3s ease-in-out
     &:hover
       border-bottom: 1px solid #fff
-      i
-        color: #fff
+      svg
+        fill: #fff
+
 
 @media (max-width: $xl)
   .socials-wrapper
