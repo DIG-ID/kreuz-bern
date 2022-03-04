@@ -69,6 +69,7 @@ function theme_enqueue_styles() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array( 'jquery' ), $theme_version, true );
 	wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', array(), $theme_version, true );
 }
 
 // Custom widget for mobile language switcher
@@ -91,9 +92,9 @@ function register_custom_language_widget() {
 function my_acf_init() {
 	acf_update_setting( 'google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0' );
 }
-if ( is_page_template( array( 'page-attractions.php', 'page-contacts.php' ) ) ) :
-	add_action( 'acf/init', 'my_acf_init' );
-endif;
+
+add_action( 'acf/init', 'my_acf_init' );
+
 
 // Theme otimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';
