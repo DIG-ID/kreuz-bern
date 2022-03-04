@@ -7,6 +7,7 @@ mix
   .setResourceRoot("./")
   .js("assets/js/main.js", "build")
   .sass("assets/sass/main.scss", "build")
+  .sass("assets/sass/admin-login.sass", "build")
 
   .disableNotifications()
   .browserSync({
