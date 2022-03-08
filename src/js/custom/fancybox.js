@@ -1,7 +1,5 @@
-import { fancybox } from "@fancyapps/ui";
+import { Fancybox } from "@fancyapps/ui";
 
-$(function() {
-  $('[data-fancybox="gallery"]').fancybox({
-    protect: true
-  });
+Fancybox.bind('[data-fancybox="gallery"]', {
+  protect: true
 });
