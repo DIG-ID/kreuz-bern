@@ -99,6 +99,47 @@
         background-color: #fff
         color: $primary-color
 
+.page-template-page-offers
+  #main-sidebar
+    .row
+      .col-12
+        &:nth-child(3)
+          .block
+            background-color: $primary-color
+            &__title
+              color: #fff
+            &__text
+              color: #fff
+              a
+                text-decoration: none
+                color: #fff
+            &__btn
+              border-color: #fff
+              color: #fff
+              &:hover
+                background-color: #fff
+                color: $primary-color
+
+.page-template-page-contacts
+  #main-sidebar
+    .row
+      .col-12
+        &:nth-child(2)
+          .block
+            background-color: #fff
+            &__title
+              color: #000
+            &__text
+              color: #000
+              a
+                color: #fff
+            &__btn
+              border: 1px solid $primary-color
+              color: $primary-color
+              &:hover
+                background-color: $primary-color
+                color: #fff
+
 @media (max-width: $lg)
   .block
     padding: 22px

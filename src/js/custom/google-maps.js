@@ -144,7 +144,7 @@
       position : latLng,
       map: map,
       icon: {
-        url: "<?php home_url(); ?>/wp-content/uploads/2022/02/kreuz_hotel_bern_mapmarker.png",
+        url: "https://kreuzdev.yournewwebsite.ch/wp-content/uploads/2022/02/kreuz_hotel_bern_mapmarker.png",
       }
     });
 

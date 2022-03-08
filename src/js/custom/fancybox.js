@@ -1,4 +1,4 @@
-import { Fancybox } from "@fancyapps/ui";
+import { fancybox } from "@fancyapps/ui";
 
 $(function() {
   $('[data-fancybox="gallery"]').fancybox({
