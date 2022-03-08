@@ -60,16 +60,16 @@ endif;
 // Enqueue styles and scripts
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
-
-	// Get the theme data
-	$the_theme     = wp_get_theme();
-	$theme_version = $the_theme->get( 'Version' );
-	//wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, $theme_version, 'all' );
-	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/build/main.css', array(), $theme_version );
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/build/main.js', array( 'jquery' ), $theme_version, true );
-	wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, true );
-	wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', array(), $theme_version, true );
+	if ( ! is_admin() ) :
+		// Get the theme data
+		$the_theme     = wp_get_theme();
+		$theme_version = $the_theme->get( 'Version' );
+		wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
+		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
+		wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, true );
+		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', array(), $theme_version, true );
+	endif;
 }
 
 // Custom widget for mobile language switcher
@@ -77,13 +77,13 @@ add_action( 'widgets_init', 'register_custom_language_widget' );
 function register_custom_language_widget() {
 	register_sidebar(
 		array(
-		'id'            => 'lang-switcher-mobile',
-		'name'          => esc_html__( 'Language Switcher Mobile Widget' ),
-		'description'   => esc_html__( 'Widget area for language selector mobile' ),
-		'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '',
-		'after_title'   => '',
+			'id'            => 'lang-switcher-mobile',
+			'name'          => esc_html__( 'Language Switcher Mobile Widget' ),
+			'description'   => esc_html__( 'Widget area for language selector mobile' ),
+			'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => '',
 		)
 	);
 }

@@ -1,6 +1,4 @@
-window.$ = window.jQuery = require('jquery');
-window.Popper = require('popper.js');
-require('bootstrap');
+import bootstrap from 'bootstrap';
 
 import "./custom/swiper";
 import "./custom/fancybox";

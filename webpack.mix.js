@@ -1,18 +1,21 @@
 // webpack.mix.js
 
-let mix = require("laravel-mix");
+let mix = require('laravel-mix');
 
 mix
-  .setPublicPath("build")
-  .setResourceRoot("./")
-  .js("assets/js/main.js", "build")
-  .sass("assets/sass/main.scss", "build")
-  .sass("assets/sass/admin-login.sass", "build")
+  .setPublicPath('dist')
+  .setResourceRoot('./')
+  .autoload({
+    jquery: ['$', 'window.jQuery']
+  })
+  .js('src/js/main.js', 'dist')
+  .sass('src/sass/main.sass', 'dist')
+  .sass('src/sass/admin-login.sass', 'dist')
 
   .disableNotifications()
   .browserSync({
     proxy: "localhost/kreuzbern",
-    files: ["./**/*.php", "./build/*.js", "./build/*.css"]
+    files: ["./**/*.php", "./dist/*.js", "./dist/*.css"]
   });
 
 if (!mix.inProduction()) {

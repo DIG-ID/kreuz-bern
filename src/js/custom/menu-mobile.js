@@ -1,6 +1,4 @@
-import $ from "jquery";
-
-(function( $ ) {
+$(function() {
   
   $("#opener").on( "click", function () {
     if ( $("#opener__menu").hasClass("closed") ) {
@@ -24,4 +22,4 @@ import $ from "jquery";
     }
   });
 
-})(jQuery);
+});

@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 $(function() {
   $('.scrollToTop').on( 'click', function (event) {
     event.preventDefault();
