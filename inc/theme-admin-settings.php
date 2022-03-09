@@ -27,7 +27,7 @@ add_action( 'wp_dashboard_setup', 'disable_default_dashboard_widgets', 999 );
 // http://codex.wordpress.org/Plugin_API/Action_Reference/login_enqueue_scripts
 function theme_login_css() {
 	$theme_version = wp_get_theme()->get( 'Version' );
-	wp_enqueue_style( 'admin-login-css', get_theme_file_uri( '/build/admin-login.css' ), array(), $theme_version );
+	wp_enqueue_style( 'admin-login-css', get_theme_file_uri( '/dist/admin-login.css' ), array(), $theme_version );
 }
 add_action( 'login_enqueue_scripts', 'theme_login_css', 10 );
 
