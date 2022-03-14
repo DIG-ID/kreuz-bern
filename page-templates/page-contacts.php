@@ -44,7 +44,7 @@ get_header(); ?>
 				<div class="block block-inverted">
 					<h3 class="block__title"><?php the_field( 'contact_block_title' ); ?></h3>
 					<p class="block__text"><?php the_field( 'contact_block_content' ); ?></p>
-					<a class="block__btn" href="mailto:<?php the_field( 'contact_block_button_url' ); ?>"><?php the_field( 'contact_block_button_text' ); ?></a>
+					<a class="block__btn" href="mailto:<?php the_field( 'contact_block_button_email' ); ?>"><?php the_field( 'contact_block_button_text' ); ?></a>
 				</div>
 			</div>
 			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
