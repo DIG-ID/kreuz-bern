@@ -51,7 +51,7 @@ get_header(); ?>
 									<p class="main-block__text"><?php the_field( 'page_description' ); ?></p>
 									<div class="main-block__btn--wrapper">
 										<a href="<?php the_permalink(); ?>" class="main-block__btn "><?php esc_html_e( 'Details', 'kreuz-bern' ); ?></a>
-										<a href="<?php the_field( 'book_button_link' ); ?>" class="main-block__btn main-block__btn--dark"><?php the_field( 'book_button' ); ?></a>
+										<a href="<?php the_field( 'book_button_link' ); ?>" class="main-block__btn main-block__btn--dark" target="_blank"><?php the_field( 'book_button' ); ?></a>
 									</div>
 								</div>
 							</article>
