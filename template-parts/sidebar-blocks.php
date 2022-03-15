@@ -25,7 +25,13 @@ if ( $sidebar_blocks ) :
 				<h3 class="block__title"><?php the_title(); ?></h3>
 				<p class="block__text"><?php the_field( 'block_text' ); ?></p>
 				<?php if ( $block_button_url && $block_button_text ) : ?>
-					<a class="block__btn" href="<?php echo esc_url( $block_button_url ); ?>"><?php echo $block_button_text ?></a>
+					<?php
+					$block_link_in_new_window = '';
+					if ( get_field( 'block_open_in_a_new_window' ) ) :
+						$block_link_in_new_window = 'target=_blank';
+					endif;
+					?>
+					<a class="block__btn" href="<?php echo esc_url( $block_button_url ); ?>" <?php echo esc_attr( $block_link_in_new_window ); ?>><?php echo $block_button_text; ?></a>
 				<?php endif; ?>
 			</div>
 		</div>
