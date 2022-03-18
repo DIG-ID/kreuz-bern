@@ -12,11 +12,24 @@ get_header(); ?>
 			<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
 		</video>
 		<div class="booking-bar__container">
-			<?php if(ICL_LANGUAGE_CODE=='de'): ?><div id="sb-container"></div>
-			<?php elseif(ICL_LANGUAGE_CODE=='en'): ?><div id="sb-container-en"></div>
-			<?php elseif(ICL_LANGUAGE_CODE=='fr'): ?><div id="sb-container-fr"></div>
-			<?php endif; ?>
-			<button data-fancybox="dialog" data-src="#bookingbar-contents" class="button button__blue button__booking button__mobile"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></button>
+			<?php
+			if ( 'de' === ICL_LANGUAGE_CODE ) :
+				?>
+				<a href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=DE" target="_blank" class="button button__blue button__booking button__mobile"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></a>
+				<div id="sb-container"></div>
+				<?php
+			elseif ( 'en' === ICL_LANGUAGE_CODE ) :
+				?>
+				<a href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=EN" target="_blank" class="button button__blue button__booking button__mobile"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></a>
+				<div id="sb-container-en"></div>
+				<?php
+			elseif ( 'fr' === ICL_LANGUAGE_CODE ) :
+				?>
+				<a href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=FR" target="_blank" class="button button__blue button__booking button__mobile"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></a>
+				<div id="sb-container-fr"></div>
+				<?php
+			endif;
+			?>
 		</div>
 	</section>
 	<main id="main" class="site-main" role="main">
