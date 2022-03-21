@@ -23,6 +23,8 @@ function kreuzbern_setup() {
 
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
+	add_theme_support( 'responsive-embeds' );
+
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
 	add_image_size( 'main-block-thumbnail', 462, 330, array( 'center', 'center' ) );
@@ -68,7 +70,10 @@ function theme_enqueue_styles() {
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
 		wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, true );
-		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', array(), $theme_version, true );
+		if ( is_page_template( array( 'page-templates/page-attractions.php', 'page-templates/page-contacts.php' ) ) ) :
+			wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', array(), $theme_version, true );
+			wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/dist/google-maps.js', array( 'jquery' ), $theme_version, true );
+		endif;
 	endif;
 }
 
@@ -93,7 +98,10 @@ function my_acf_init() {
 	acf_update_setting( 'google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0' );
 }
 
-add_action( 'acf/init', 'my_acf_init' );
+if ( is_page_template( array( 'page-templates/page-attractions.php', 'page-templates/page-contacts.php' ) ) || is_admin() ) :
+	add_action( 'acf/init', 'my_acf_init' );
+endif;
+
 
 
 // Theme otimizations.
@@ -107,3 +115,32 @@ require get_template_directory() . '/inc/customizer.php';
 
 // Theme custom admin settings.
 require get_template_directory() . '/inc/theme-admin-settings.php';
+
+
+/**
+ * load video trough 
+ */
+// Load value.
+/*
+$iframe = get_field('oembed');
+
+// Use preg_match to find iframe src.
+preg_match('/src="(.+?)"/', $iframe, $matches);
+$src = $matches[0];
+
+// Add extra parameters to src and replace HTML.
+$params = array(
+	'controls' => 0,
+	'autoplay' => 1,
+	'loop'     => 1,
+	'hd'        => 1,
+);
+$new_src = add_query_arg($params, $src);
+$iframe = str_replace($src, $new_src, $iframe);
+
+// Add extra attributes to iframe HTML.
+$attributes = 'frameborder="0"';
+$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+// Display customized HTML.
+echo $iframe;

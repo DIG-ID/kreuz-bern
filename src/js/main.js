@@ -5,4 +5,4 @@ import "./custom/fancybox";
 import "./custom/menu-mobile";
 import "./custom/scrolltop";
 import "./custom/simpleBooking";
-import "./custom/google-maps";
+//import "./custom/google-maps";
