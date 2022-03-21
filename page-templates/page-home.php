@@ -8,9 +8,11 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<section class="home-banner">
-		<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
-			<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
-		</video>
+		<div class="video-wrapper">
+			<video class="home-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
+				<source src="<?php the_field( 'video_link' ); ?>" type="video/mp4">
+			</video>
+		</div>
 		<div class="booking-bar__container">
 			<?php
 			if ( 'de' === ICL_LANGUAGE_CODE ) :

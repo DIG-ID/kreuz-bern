@@ -2,28 +2,38 @@
 
 .home-banner
   position: relative
-  padding: 0 60px
   background-color: #ffffff
-  max-height: 100vh
-  overflow: hidden
   &__video
     width: 100%
     height: auto
+  .video-wrapper
+    position: relative
+    padding: 0 60px
+    max-height: 100vh
+    overflow: hidden
+
+@media (max-width: $xl)
+  .home-banner
+    .video-wrapper
+      padding: 0 15px
 
 @media (max-width: $md)
   .home-banner
-    height: auto
-    padding: 0 60px
-    video
+    &__video
       margin-top: 54px
+    .video-wrapper
+      height: auto
+      padding: 0 15px
 
 @media (max-width: $sm)
   .home-banner
-    padding: 0 15px
+    .video-wrapper
+      padding: 0 15px
 
 .admin-bar
   .home-banner
-    max-height: 97vh
+    .video-wrapper
+      max-height: 97vh
 
 .banner
   &__circle
