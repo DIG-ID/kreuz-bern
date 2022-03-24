@@ -6,9 +6,11 @@
  */
 
 get_header(); ?>
-	<h1 class="screen-reader-text"><?php the_title(); ?></h1>
+	<!--<h1 class="screen-reader-text"><?php //the_title(); ?></h1>-->
 	<?php do_action( 'wrapper_open' ); ?>
-
+		<div class="col-12">
+			<h1 class="page-title-example"><?php the_title(); ?></h1>
+		</div>
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12 px-15">

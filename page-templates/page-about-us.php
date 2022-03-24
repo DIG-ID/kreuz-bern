@@ -8,12 +8,14 @@
 get_header(); ?>
 
 	<?php do_action( 'wrapper_open' ); ?>
-
+		<div class="col-12">
+			<h1 class="page-title-example"><?php the_title(); ?></h1>
+		</div>
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 px-15">
 					<div class="block block-wide">
-						<h1 class="block__title"><?php the_field( 'page_title' ); ?></h1>
+						<h2 class="block__title"><?php the_field( 'page_title' ); ?></h2>
 						<p class="block__text"><?php the_field( 'page_description' ); ?></p>
 					</div>
 				</div>
