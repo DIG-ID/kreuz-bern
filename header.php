@@ -49,6 +49,7 @@
 
 
 							<?php } else {
+								echo '<h1 class="screen-reader-text">' . get_the_title() . '</h1>';
 								the_custom_logo();
 							} ?><!-- end custom logo -->
 

@@ -9,7 +9,7 @@ get_header(); ?>
 	
 	<?php do_action( 'wrapper_open' ); ?>
 
-		<div class="col-12">
+		<div class="col-12 px-15">
 			<h1 class="page-title-example"><?php the_title(); ?></h1>
 		</div>
 		<?php do_action( 'before_main_content' ); ?>

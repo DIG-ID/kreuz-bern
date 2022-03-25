@@ -5,7 +5,6 @@
 
 get_header(); ?>
 	<?php do_action( 'wrapper_open' ); ?>	
-
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
 				<div class="col-12">
