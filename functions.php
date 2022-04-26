@@ -102,8 +102,6 @@ if ( is_page_template( array( 'page-templates/page-attractions.php', 'page-templ
 	add_action( 'acf/init', 'my_acf_init' );
 endif;
 
-
-
 // Theme otimizations.
 //require get_template_directory() . '/inc/theme-optimizations.php';
 
@@ -115,32 +113,3 @@ require get_template_directory() . '/inc/customizer.php';
 
 // Theme custom admin settings.
 require get_template_directory() . '/inc/theme-admin-settings.php';
-
-
-/**
- * load video trough 
- */
-// Load value.
-/*
-$iframe = get_field('oembed');
-
-// Use preg_match to find iframe src.
-preg_match('/src="(.+?)"/', $iframe, $matches);
-$src = $matches[0];
-
-// Add extra parameters to src and replace HTML.
-$params = array(
-	'controls' => 0,
-	'autoplay' => 1,
-	'loop'     => 1,
-	'hd'        => 1,
-);
-$new_src = add_query_arg($params, $src);
-$iframe = str_replace($src, $new_src, $iframe);
-
-// Add extra attributes to iframe HTML.
-$attributes = 'frameborder="0"';
-$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
-
-// Display customized HTML.
-echo $iframe;
