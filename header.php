@@ -13,6 +13,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
+		<meta name="gloreftag" content="itJt7UcYMpzD+2wZQUQVoA=="/>
+
+		<!-- GLOBONET Tracking Code GA4 -->
+			<script>
+			var _paq = _paq || [];
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="//tracking.globonet.ch/";
+				_paq.push(['setTrackerUrl', u+'piwik.php']);
+				_paq.push(['setSiteId', '609']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+			</script>
+			<noscript><p><img src="//tracking.globonet.ch/piwik.php?idsite=609" style="border:0;" alt="" /></p></noscript>
+
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DQMVM4NY1"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'G-9DQMVM4NY1');
+			</script>
+		<!-- End GLOBONET Tracking Code GA4 -->
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110180671-1"></script>
 		<script>
