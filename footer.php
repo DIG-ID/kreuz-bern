@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 		<footer id="footer-wrapper">
 			<div class="container">
 				<div class="row justify-content-between align-items-start">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-1' ) ) ); ?>
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
