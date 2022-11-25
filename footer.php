@@ -20,13 +20,13 @@ defined( 'ABSPATH' ) || exit;
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-3' ) ) ); ?>
+						<span class="footer-block__title"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?><?php do_action( 'socials' ); ?></span>
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
-						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-4' ) ) ); ?>
+						<img src="<?php echo wp_upload_dir()['url'] . '/2022/11/125_20q_01_swisstainable_1_committed_RGB.jpg' ?>" alt="" title="">	
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
-						<span class="footer-block__title"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?></span>
-						<?php do_action( 'socials' ); ?>
+					<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-4' ) ) ); ?>
 					</div>
 				</div><!-- row end -->
 				<div class="row align-items-center justify-content-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxxl-none">
