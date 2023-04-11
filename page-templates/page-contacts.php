@@ -52,7 +52,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 		<?php do_action( 'after_main_sidebar' ); ?>
 		<div class="d-none">
-			
+			<?php get_template_part( 'template-parts/sbb-form' ); ?>
 		</div>
 	<?php do_action( 'wrapper_close' ); ?>
 
