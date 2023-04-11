@@ -51,7 +51,9 @@ get_header(); ?>
 			</div>
 			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 		<?php do_action( 'after_main_sidebar' ); ?>
-
+		<div class="d-none">
+			
+		</div>
 	<?php do_action( 'wrapper_close' ); ?>
 
 <?php get_footer();
