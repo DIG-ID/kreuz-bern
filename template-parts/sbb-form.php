@@ -108,7 +108,7 @@
                 </div>
                 <div style="display:flex; width:100%; align-itmes:stretch">
                 <div style="width:100%; display:flex; padding-top:2em; justify-content:flex-end">
-                    <input type="submit" value="Search for connection" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; font-weight:bold; margin:0; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
+                    <input type="submit" value="<?php if(ICL_LANGUAGE_CODE=='de'): ?>Verbindung suchen<?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Search for connection<?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Rechercher<?php endif; ?>" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; font-weight:bold; margin:0; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
                 </div>      
                 </div>
             </div>
