@@ -51,7 +51,7 @@ get_header(); ?>
 			</div>
 			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
 		<?php do_action( 'after_main_sidebar' ); ?>
-		<div class="d-none">
+		<div class="section__sbb d-none bg-white">
 			<?php get_template_part( 'template-parts/sbb-form' ); ?>
 		</div>
 	<?php do_action( 'wrapper_close' ); ?>
