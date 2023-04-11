@@ -42,12 +42,12 @@
   </script>
   <body>
     <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="d-flex col-12 col-lg-4 align-items-center">
             <img alt="sbb logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/sbb_extension.svg" width="272" height="50" style="padding-bottom: 10px;width:100%;">
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="d-flex col-12 col-lg-8 justify-content-center" style="padding: 30px 0 10px 0;">
             <form onsubmit="callSBB()" action="" id="sbbapp">
-                <div style="display:flex; width:50%; margin-bottom: 2rem; align-itmes:stretch">
+                <div style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">From:</label>
                     <input id="from" type="text" name="from" placeholder="Place" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
@@ -57,7 +57,7 @@
                     <input id="to" type="text" name="to" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';" value="Bern">
                 </div>      
                 </div>
-                <div style="display:flex; width:50%; margin-bottom: 1rem; align-itmes:stretch">
+                <div style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">Date:</label>
                     <input id="date" type="text" name="date" value="30.01.2022" style="border:none; background:none; font-size:20px; font-family:'WalsheimThin';">
@@ -70,14 +70,14 @@
                 <div style="display:flex; width:50%; margin-bottom: 1rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; margin-right: 4rem; padding-top:2em;">
                     <input type="radio" value="false" name="isArrival" checked="checked" id="departure">
-                    <label for="departure" style="padding-right:2em;">Departure</label>
+                    <label for="departure" style="padding-right:2em;padding-left:0.4em;">Departure</label>
                     <input type="radio" value="true" name="isArrival" id="arrival" class="is_arrival">
-                    <label for="arrival">Arrival</label>
+                    <label for="arrival" style="padding-left:0.4em;">Arrival</label>
                 </div>     
                 </div>
-                <div style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
-                <div style="width:50%; display:flex; margin-right: 4rem; padding-top:2em; justify-content:flex-end">
-                    <input type="submit" value="Search for connection" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; margin:0 0 1rem; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
+                <div style="display:flex; width:100%; align-itmes:stretch">
+                <div style="width:100%; display:flex; padding-top:2em; justify-content:flex-end">
+                    <input type="submit" value="Search for connection" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; margin:0; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
                 </div>      
                 </div>
             </form>
