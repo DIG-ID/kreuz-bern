@@ -47,8 +47,9 @@
         </div>
         <div class="d-flex col-12 col-lg-8 justify-content-center" style="padding: 30px 8% 10px;">
             <form onsubmit="callSBB()" action="" id="sbbapp" style="width: 100%;">
+            <div class="container-fluid">
                 <div class="row" style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
-                <div class="col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
+                <div class="m-right-4 col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Von:
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>From:
@@ -68,7 +69,7 @@
                 </div>      
                 </div>
                 <div class="row" style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
-                <div class="col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
+                <div class="m-right-4 col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Datum:
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Date:
@@ -110,6 +111,7 @@
                     <input type="submit" value="Search for connection" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; font-weight:bold; margin:0; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
                 </div>      
                 </div>
+            </div>
             </form>
         </div>
     </div>
