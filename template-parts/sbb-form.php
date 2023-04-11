@@ -47,7 +47,7 @@
         </div>
         <div class="d-flex col-12 col-lg-8 justify-content-center" style="padding: 30px 8% 10px;">
             <form onsubmit="callSBB()" action="" id="sbbapp" style="width: 100%;">
-                <div style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
+                <div class="row" style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
                 <div class="col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Von:
@@ -67,7 +67,7 @@
                     <input id="to" type="text" name="to" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';" value="Bern">
                 </div>      
                 </div>
-                <div style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
+                <div class="row" style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
                 <div class="col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Datum:
