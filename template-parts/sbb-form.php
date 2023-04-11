@@ -56,7 +56,7 @@
                         <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>De:
                         <?php endif; ?>
                     </label>
-                    <input id="from" type="text" name="from" placeholder="Ort" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
+                    <input id="from" type="text" name="from" placeholder="Ort" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';outline: 0;">
                 </div>
                 <div class="col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
@@ -65,7 +65,7 @@
                         <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>À:
                         <?php endif; ?>
                     </label>
-                    <input id="to" type="text" name="to" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';" value="Bern">
+                    <input id="to" type="text" name="to" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';outline: 0;" value="Bern">
                 </div>      
                 </div>
                 <div class="row" style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
@@ -76,7 +76,7 @@
                         <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Date:
                         <?php endif; ?>
                     </label>
-                    <input id="date" type="text" name="date" value="30.01.2022" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
+                    <input id="date" type="text" name="date" value="30.01.2022" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';outline: 0;">
                 </div>
                 <div class="col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
@@ -85,19 +85,19 @@
                         <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Heure:
                         <?php endif; ?>
                     </label>
-                    <input id="time" type="text" name="time" value="13:05" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';" value="Bern">
+                    <input id="time" type="text" name="time" value="13:05" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';outline: 0;" value="Bern">
                 </div>      
                 </div>
                 <div class="col-12 col-lg-6" style="display:flex; margin-bottom: 1rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; margin-right: 4rem; padding-top:2em;">
-                    <input type="radio" value="false" name="isArrival" checked="checked" id="departure">
+                    <input type="radio" value="false" name="isArrival" checked="checked" id="departure" style="outline: 0;">
                     <label for="departure" style="padding-right:2em;padding-left:0.4em;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Abfahrt
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Departure
                         <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Départ
                         <?php endif; ?>
                     </label>
-                    <input type="radio" value="true" name="isArrival" id="arrival" class="is_arrival">
+                    <input type="radio" value="true" name="isArrival" id="arrival" class="is_arrival" style="outline: 0;">
                     <label for="arrival" style="padding-left:0.4em;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Ankunft
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Arrival
