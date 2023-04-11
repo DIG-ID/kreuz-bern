@@ -49,35 +49,65 @@
             <form onsubmit="callSBB()" action="" id="sbbapp">
                 <div style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
-                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">From:</label>
+                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
+                        <?php if(ICL_LANGUAGE_CODE=='de'): ?>Von:
+                        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>From:
+                        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>De:
+                        <?php endif; ?>
+                    </label>
                     <input id="from" type="text" name="from" placeholder="Place" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
                 </div>
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000;">
-                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">To:</label>
+                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
+                        <?php if(ICL_LANGUAGE_CODE=='de'): ?>Nach:
+                        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>To:
+                        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>À:
+                        <?php endif; ?>
+                    </label>
                     <input id="to" type="text" name="to" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';" value="Bern">
                 </div>      
                 </div>
                 <div style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
-                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">Date:</label>
-                    <input id="date" type="text" name="date" value="30.01.2022" style="border:none; background:none; font-size:20px; font-family:'WalsheimThin';">
+                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
+                        <?php if(ICL_LANGUAGE_CODE=='de'): ?>Datum:
+                        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Date:
+                        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Date:
+                        <?php endif; ?>
+                    </label>
+                    <input id="date" type="text" name="date" value="30.01.2022" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
                 </div>
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000;">
-                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">Time:</label>
-                    <input id="time" type="text" name="time" value="13:05" style="border:none; background:none; font-size:20px; font-family:'WalsheimThin';" value="Bern">
+                    <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
+                        <?php if(ICL_LANGUAGE_CODE=='de'): ?>Zeit:
+                        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Time:
+                        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Heure:
+                        <?php endif; ?>
+                    </label>
+                    <input id="time" type="text" name="time" value="13:05" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';" value="Bern">
                 </div>      
                 </div>
                 <div style="display:flex; width:50%; margin-bottom: 1rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; margin-right: 4rem; padding-top:2em;">
                     <input type="radio" value="false" name="isArrival" checked="checked" id="departure">
-                    <label for="departure" style="padding-right:2em;padding-left:0.4em;">Departure</label>
+                    <label for="departure" style="padding-right:2em;padding-left:0.4em;">
+                        <?php if(ICL_LANGUAGE_CODE=='de'): ?>Abfahrt
+                        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Departure
+                        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Départ
+                        <?php endif; ?>
+                    </label>
                     <input type="radio" value="true" name="isArrival" id="arrival" class="is_arrival">
-                    <label for="arrival" style="padding-left:0.4em;">Arrival</label>
+                    <label for="arrival" style="padding-left:0.4em;">
+                        <?php if(ICL_LANGUAGE_CODE=='de'): ?>Ankunft
+                        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Arrival
+                        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Arrivée
+                        <?php endif; ?>
+                    </label>
                 </div>     
                 </div>
                 <div style="display:flex; width:100%; align-itmes:stretch">
                 <div style="width:100%; display:flex; padding-top:2em; justify-content:flex-end">
-                    <input type="submit" value="Search for connection" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; margin:0; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
+                    <input type="submit" value="Search for connection" id="search--sbb" class="button" style="background:red; display:inline-block; color:#fefefe; font-weight:bold; margin:0; padding: .85em 1em; border:1px solid transparent; font-family:inherit; font-size:.9rem; line-height:1; text-align:center;">
                 </div>      
                 </div>
             </form>
