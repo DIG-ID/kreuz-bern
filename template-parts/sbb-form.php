@@ -49,7 +49,7 @@
             <form onsubmit="callSBB()" action="" id="sbbapp" style="width: 100%;">
             <div class="container-fluid">
                 <div class="row" style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
-                <div class="m-right-4 col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000;">
+                <div class="m-right-4 col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Von:
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>From:
@@ -58,7 +58,7 @@
                     </label>
                     <input id="from" type="text" name="from" placeholder="Place" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
                 </div>
-                <div class="col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000;">
+                <div class="col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Nach:
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>To:
@@ -69,7 +69,7 @@
                 </div>      
                 </div>
                 <div class="row" style="display:flex; width:100%; margin-bottom: 1rem; align-itmes:stretch">
-                <div class="m-right-4 col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000;">
+                <div class="m-right-4 col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Datum:
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Date:
@@ -78,7 +78,7 @@
                     </label>
                     <input id="date" type="text" name="date" value="30.01.2022" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';">
                 </div>
-                <div class="col-12 col-lg-6" style="display:flex; border-bottom: 1px solid #000000;">
+                <div class="col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
                         <?php if(ICL_LANGUAGE_CODE=='de'): ?>Zeit:
                         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Time:
