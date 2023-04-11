@@ -45,8 +45,8 @@
         <div class="d-flex col-12 col-lg-4 align-items-center">
             <img alt="sbb logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/sbb_extension.svg" width="272" height="50" style="padding-bottom: 10px;width:100%;">
         </div>
-        <div class="d-flex col-12 col-lg-8 justify-content-center" style="padding: 30px 0 10px 0;">
-            <form onsubmit="callSBB()" action="" id="sbbapp">
+        <div class="d-flex col-12 col-lg-8 justify-content-center" style="padding: 30px 8% 10px;">
+            <form onsubmit="callSBB()" action="" id="sbbapp" style="width: 100%;">
                 <div style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
                 <div style="width:50%; display:flex; border-bottom: 1px solid #000000; margin-right: 4rem;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
