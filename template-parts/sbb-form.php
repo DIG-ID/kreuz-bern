@@ -35,7 +35,7 @@
         }else if(document.getElementById('arrival').checked) {
           arrival = "true";
         }
-        let url = `https://www.sbb.ch/en/buying/pages/fahrplan/fahrplan.xhtml?von=${sbbfrom}&nach=${sbbto}&datum=${sbbdate}&zeit=${sbbtime}&an=${arrival}&suche=true`;
+        let url = `https://www.sbb.ch/de/buying/pages/fahrplan/fahrplan.xhtml?von=${sbbfrom}&nach=${sbbto}&datum=${sbbdate}&zeit=${sbbtime}&an=${arrival}&suche=true`;
         window.open(url, '_blank');
   
   }
