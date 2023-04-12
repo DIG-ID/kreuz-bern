@@ -56,7 +56,7 @@
                         <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>De:
                         <?php endif; ?>
                     </label>
-                    <input id="from" type="text" name="from" placeholder="Ort" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';outline: 0;">
+                    <input id="from" type="text" name="from" placeholder="<?php if(ICL_LANGUAGE_CODE=='de'): ?>Ort<?php elseif(ICL_LANGUAGE_CODE=='en'): ?>Location<?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>Emplacement<?php endif; ?>" style="border:none; background:none; font-size:18px; font-family:'WalsheimThin';outline: 0;">
                 </div>
                 <div class="col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
                     <label style="padding-left:0px; color:#0a0a0a; padding-right:10px;">
