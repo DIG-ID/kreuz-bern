@@ -39,6 +39,38 @@
         window.open(url, '_blank');
   
   }
+  function callSBB_en() {
+        let sbbfrom = document.getElementById('from').value;
+        let sbbto = document.getElementById('to').value;
+        let sbbdate = document.getElementById('date').value;
+        let sbbtime = document.getElementById('time').value;
+        let arrival = "";
+      
+        if(document.getElementById('departure').checked) {
+          arrival = "false";
+        }else if(document.getElementById('arrival').checked) {
+          arrival = "true";
+        }
+        let url = `https://www.sbb.ch/en/buying/pages/fahrplan/fahrplan.xhtml?von=${sbbfrom}&nach=${sbbto}&datum=${sbbdate}&zeit=${sbbtime}&an=${arrival}&suche=true`;
+        window.open(url, '_blank');
+  
+  }
+  function callSBB_fr() {
+        let sbbfrom = document.getElementById('from').value;
+        let sbbto = document.getElementById('to').value;
+        let sbbdate = document.getElementById('date').value;
+        let sbbtime = document.getElementById('time').value;
+        let arrival = "";
+      
+        if(document.getElementById('departure').checked) {
+          arrival = "false";
+        }else if(document.getElementById('arrival').checked) {
+          arrival = "true";
+        }
+        let url = `https://www.sbb.ch/fr/acheter/pages/fahrplan/fahrplan.xhtml?von=${sbbfrom}&nach=${sbbto}&datum=${sbbdate}&zeit=${sbbtime}&an=${arrival}&suche=true`;
+        window.open(url, '_blank');
+  
+  }
   </script>
   <body>
     <div class="row">
@@ -46,7 +78,7 @@
             <img alt="sbb logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/sbb_extension.svg" width="272" height="50" style="padding-bottom: 10px;width:100%;">
         </div>
         <div class="d-flex col-12 col-lg-8 justify-content-center" style="padding: 30px 8% 10px;">
-            <form onsubmit="callSBB()" action="" id="sbbapp" style="width: 100%;">
+            <form onsubmit="<?php if(ICL_LANGUAGE_CODE=='de'): ?>callSBB()<?php elseif(ICL_LANGUAGE_CODE=='en'): ?>callSBB_en()<?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>callSBB_de()<?php endif; ?>" action="" id="sbbapp" style="width: 100%;">
             <div class="container-fluid">
                 <div class="row" style="display:flex; width:100%; margin-bottom: 2rem; align-itmes:stretch">
                 <div class="m-right-4 col-12 col-lg-5" style="display:flex; border-bottom: 1px solid #000000;">
