@@ -21,38 +21,13 @@ get_header(); ?>
 		</div>
 		<?php do_action( 'before_main_content' ); ?>
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15 block-fh">
+				<div class="col-12 col-sm-12 col-md-12 px-15">
 					<div class="block block-wide">
 						<h2 class="block__title"><?php the_field( 'page_title' ); ?></h2>
 						<p class="block__text"><?php the_field( 'page_description' ); ?></p>
 					</div>
 				</div>
-				<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
-					<div class="block-image">
-						<?php
-						if ( $page_image  ) :
-							echo wp_get_attachment_image( $page_image , $size );
-						endif;
-						?>
-						<div class="block-image__content">
-							<h2 class="block-image__title"><?php the_field( 'page_title' ); ?></h2>
-							<p class="block-image__text"><?php the_field( 'page_description' ); ?></p>
-						</div>
-					</div><!-- block-image -->
-				<!-- </div><!-- .col --> 
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
-					<div class="block-image">
-						<?php
-						if ( $team_image ) :
-							echo wp_get_attachment_image( $team_image, $size );
-						endif;
-						?>
-						<div class="block-image__content">
-							<h2 class="block-image__title"><?php the_field( 'team_block_title' ); ?></h2>
-							<p class="block-image__text"><?php the_field( 'team_block_description' ); ?></p>
-						</div>
-					</div><!-- block-image -->
-				</div><!-- .col -->
+
 			</div><!-- .row -->
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
@@ -73,26 +48,14 @@ get_header(); ?>
 				</div><!-- .col -->
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 					<div class="block-image">
-						<a href="<?php the_field( 'history_block_button_link' ); ?>">
-							<?php
-							if ( $sponsor_image) :
-								echo wp_get_attachment_image( $sponsor_image, $size );
-							endif;
-							?>
-						</a>
+						<?php
+						if ( $team_image ) :
+							echo wp_get_attachment_image( $team_image, $size );
+						endif;
+						?>
 						<div class="block-image__content">
-							<h2 class="block-image__title"><?php the_field( 'sponsor_title' ); ?></h2>
-							<p class="block-image__text"><?php the_field( 'sponsor_description' ); ?></p>
-							<?php
-							if ( $sponsor_link ) :
-								$link_url    = $sponsor_link['url'];
-								$link_title  = $sponsor_link['title'];
-								$link_target = $sponsor_link['target'] ? $sponsor_link['target'] : '_self';
-								?>
-								<a class="block-image__btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-								<?php
-							endif;
-							?>
+							<h2 class="block-image__title"><?php the_field( 'team_block_title' ); ?></h2>
+							<p class="block-image__text"><?php the_field( 'team_block_description' ); ?></p>
 						</div>
 					</div><!-- block-image -->
 				</div><!-- .col -->
