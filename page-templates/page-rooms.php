@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	
+
 	<?php do_action( 'wrapper_open' ); ?>
 
 		<div class="col-12 px-15">
@@ -66,6 +66,11 @@ get_header(); ?>
 				wp_reset_postdata();
 				?>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-15">
+
+				</div>
+			</div><!-- .row -->
+			<div class="row">
+				<div class="col-12 px-15">
 					<div class="main-block main-block__informations main-block--inverted">
 						<div class="main-block__content">
 							<h2 class="main-block__title"><?php the_field( 'informations_title' ); ?></h2>
@@ -73,7 +78,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-			</div><!-- .row -->
+			</div>
 		<?php do_action( 'after_main_content' ); ?>
 
 		<?php do_action( 'before_main_sidebar' ); ?>
