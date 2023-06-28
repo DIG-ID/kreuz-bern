@@ -22,9 +22,9 @@ defined( 'ABSPATH' ) || exit;
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-3' ) ) ); ?>
 						<span class="footer-block__title"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?><?php do_action( 'socials' ); ?></span>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block d-flex justify-content-center align-items-center">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/swisstainable.png" style="max-width: 80px;">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/OK_GO.min.svg" style="max-width: 80px;">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/OK_GO.min.svg" style="max-width: 70px;">
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
 					<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-4' ) ) ); ?>
