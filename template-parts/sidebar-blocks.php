@@ -22,6 +22,9 @@ if ( $sidebar_blocks ) :
 				<?php if ( get_field( 'block_banner_check' ) ) : ?>
 					<span class="block__badge"><?php the_field( 'block_banner_content' ); ?></span>
 				<?php endif; ?>
+				<?php if ( get_field( 'block_image_banner_check' ) ) : ?>
+					<span class="block__badge block__badge--image"><?php echo wp_get_attachment_image( get_field( 'block_image_banner_content' ), 'full' ); ?></span>
+				<?php endif; ?>
 				<h3 class="block__title"><?php the_title(); ?></h3>
 				<p class="block__text"><?php the_field( 'block_text' ); ?></p>
 				<?php if ( $block_button_url && $block_button_text ) : ?>

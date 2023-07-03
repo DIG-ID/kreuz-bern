@@ -22,9 +22,8 @@ defined( 'ABSPATH' ) || exit;
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-3' ) ) ); ?>
 						<span class="footer-block__title"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?><?php do_action( 'socials' ); ?></span>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
 						<img src="<?php echo get_template_directory_uri(); ?>/src/images/swisstainable_engaged.png" style="max-width: 80px;">
-						<a class="logo-link" target="_blank" href="https://zuerst.proinfirmis.ch/pois/detail/5300"><img class="ok-go-logo" src="<?php echo get_template_directory_uri(); ?>/src/images/OK_GO.min.svg" style="max-width: 70px;"></a>
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
 					<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-4' ) ) ); ?>
