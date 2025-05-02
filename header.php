@@ -117,15 +117,15 @@
 						<?php
 						$simple_booking_link = '';
 						if ( 'de' === ICL_LANGUAGE_CODE ) :
-							$simple_booking_link = 'https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=DE';
+							$simple_booking_link = 'https://www.simplebooking.it/ibe2/hotel/3565?lang=DE&cur=CHF';
 						endif;
 
 						if ( 'en' === ICL_LANGUAGE_CODE ) :
-							$simple_booking_link = 'https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=EN';
+							$simple_booking_link = 'https://www.simplebooking.it/ibe2/hotel/3565?lang=EN&cur=CHF';
 						endif;
 
 						if ( 'fr' === ICL_LANGUAGE_CODE ) :
-							$simple_booking_link = 'https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=FR';
+							$simple_booking_link = 'https://www.simplebooking.it/ibe2/hotel/3565?lang=FR&cur=CHF';
 						endif;
 						?>
 						<a href="<?php echo esc_url( $simple_booking_link ); ?>" target="_blank" class="button button__blue button__booking button__desktop"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></a>
