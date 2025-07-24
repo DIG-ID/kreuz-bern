@@ -15,9 +15,9 @@ get_header(); ?>
 								<h1>404!<br><span>Error</span></h1>
 							</div>
 							<div class="not-found__content">
-								<p class="not-found__subtitle"><?php esc_html_e( 'Sorry!', 'kreuz-bern' ); ?></p>
-								<p class="not-found__description"><?php _e( 'THE PAGE YOU WERE LOOKING<br> FOR COULD NOT BE FOUND.', 'kreuz-bern' ); ?></p>
-								<a href="<?php echo esc_url( site_url() ); ?>" class="not-found__back-to-home"><?php esc_html_e( 'Home', 'kreuz-bern' ); ?></a>
+								<p class="not-found__subtitle"><?php esc_html_e( 'Entschuldigung!', 'kreuz-bern' ); ?></p>
+								<p class="not-found__description"><?php _e( 'DIE SEITE, DIE SIE SUCHEN,<br>KONNTE NICHT GEFUNDEN WERDEN.', 'kreuz-bern' ); ?></p>
+								<a href="<?php echo esc_url( site_url() ); ?>" class="not-found__back-to-home"><?php esc_html_e( 'Startseite', 'kreuz-bern' ); ?></a>
 							</div>
 						</div>
 					</div><!-- #main-content__wrapper -->
