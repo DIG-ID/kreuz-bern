@@ -17,7 +17,9 @@ get_header(); ?>
 							<div class="not-found__content">
 								<p class="not-found__subtitle"><?php esc_html_e( 'Entschuldigung!', 'kreuz-bern' ); ?></p>
 								<p class="not-found__description"><?php _e( 'DIE SEITE, DIE SIE SUCHEN,<br>KONNTE NICHT GEFUNDEN WERDEN.', 'kreuz-bern' ); ?></p>
-								<a href="<?php echo esc_url( site_url() ); ?>" class="not-found__back-to-home"><?php esc_html_e( 'Startseite', 'kreuz-bern' ); ?></a>
+								<a href="<?php echo esc_url( apply_filters( 'wpml_home_url', get_home_url() ) ); ?>" class="not-found__back-to-home">
+									<?php esc_html_e( 'Startseite', 'kreuz-bern' ); ?>
+								</a>
 							</div>
 						</div>
 					</div><!-- #main-content__wrapper -->
