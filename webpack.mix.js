@@ -8,6 +8,7 @@ mix
   .autoload({
     jquery: ['$', 'window.jQuery']
   })
+  .copy('node_modules/swiper/swiper-bundle.min.css', 'dist/swiper.css')
   .js('src/js/main.js', 'dist')
   .js('src/js/google-maps.js', 'dist')
   .sass('src/sass/main.sass', 'dist')

@@ -66,7 +66,8 @@ function theme_enqueue_styles() {
 		// Get the theme data
 		$the_theme     = wp_get_theme();
 		$theme_version = $the_theme->get( 'Version' );
-		wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
+		wp_enqueue_style( 'swiper-styles', get_stylesheet_directory_uri() . '/dist/swiper.css', array(), $theme_version );
+		wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array( 'swiper-styles' ), $theme_version );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
 		wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, false );
