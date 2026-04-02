@@ -18,6 +18,8 @@
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K6NMG4G6');</script>
 		<!-- End Google Tag Manager -->
+
+		<!-- Disabled: GA4 direct snippet (G-X4WP8TJ1PD / UA-110180671-1) — managed via GTM instead
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-X4WP8TJ1PD"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -34,7 +36,9 @@
 			gtag('config', 'UA-110180671-1');
 			gtag('config', 'G-X4WP8TJ1PD');
 		</script>
-		<!-- GLOBONET Tracking Code GA4 -->
+		-->
+
+		<!-- Disabled: GLOBONET Tracking Code GA4 (G-9DQMVM4NY1 / Piwik site 609)
 		<script>
 			var _paq = _paq || [];
 			_paq.push(['trackPageView']);
@@ -56,7 +60,7 @@
 
 			gtag('config', 'G-9DQMVM4NY1');
 		</script>
-		<!-- End GLOBONET Tracking Code GA4 -->
+		-->
 
 		<?php wp_head(); ?>
 
