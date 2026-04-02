@@ -38,17 +38,11 @@ function kreuzbern_setup() {
 }
 
 /**
- * Add preconnect/dns-prefetch for key external domains.
+ * Add preconnect for Hotels Network — loads on page load, not delayed.
  */
 function kreuz_resource_hints( $urls, $relation_type ) {
 	if ( 'preconnect' === $relation_type ) {
-		$urls[] = array( 'href' => 'https://www.googletagmanager.com' );
-		$urls[] = array( 'href' => 'https://www.google-analytics.com' );
 		$urls[] = array( 'href' => 'https://www.thehotelsnetwork.com' );
-		$urls[] = array( 'href' => 'https://www.simplebooking.it' );
-	}
-	if ( 'dns-prefetch' === $relation_type ) {
-		$urls[] = 'https://tracking.globonet.ch';
 	}
 	return $urls;
 }
