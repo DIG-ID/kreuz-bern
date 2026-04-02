@@ -118,6 +118,9 @@ endif;
 // Theme optimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';
 
+// SimpleBooking widget.
+require get_template_directory() . '/inc/simplebooking.php';
+
 // Theme custom template tags.
 require get_template_directory() . '/inc/theme-template-tags.php';
 

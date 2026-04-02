@@ -46,7 +46,7 @@ get_header(); ?>
 									<div class="banner__circle"><?php the_field( 'zimmer_block_banner_content' ); ?></div>
 								<?php endif; ?>
 								<a href="<?php the_field( 'zimmer_block_details_button_link' ); ?>">
-									<img class="main-block__tpic" alt="zimmer picture" src="<?php the_field( 'zimmer_block_image' ); ?>">
+									<img class="main-block__tpic" alt="zimmer picture" fetchpriority="high" src="<?php the_field( 'zimmer_block_image' ); ?>">
 								</a>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'zimmer_block_title' ); ?></h2>
