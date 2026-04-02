@@ -24,10 +24,10 @@ defined( 'ABSPATH' ) || exit;
 						<span class="footer-block__title" style="display:none;"><?php esc_html_e( 'Follow us', 'kreuz-bern' ); ?><?php do_action( 'socials' ); ?></span>
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
-						<img src="<?php echo get_template_directory_uri(); ?>/src/images/Swisstainable_3_leading_RGB.png" style="max-width: 100px;">
+						<img src="<?php echo get_template_directory_uri(); ?>/src/images/Swisstainable_3_leading_RGB.png" style="max-width: 100px; height: auto;" width="817" height="817" loading="lazy">
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 px-15 footer-block">
-					<img src="<?php echo get_template_directory_uri(); ?>/src/images/Ibex-BRONZE_rgb.jpg" style="max-width: 180px;">
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/Ibex-BRONZE_rgb.jpg" style="max-width: 180px; height: auto;" width="1900" height="500" loading="lazy">
 					</div>
 				</div><!-- row end -->
 				<div class="row align-items-center justify-content-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxxl-none">

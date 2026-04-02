@@ -46,7 +46,7 @@ get_header(); ?>
 									<div class="banner__circle"><?php the_field( 'zimmer_block_banner_content' ); ?></div>
 								<?php endif; ?>
 								<a href="<?php the_field( 'zimmer_block_details_button_link' ); ?>">
-									<img class="main-block__tpic" alt="zimmer picture" fetchpriority="high" src="<?php the_field( 'zimmer_block_image' ); ?>">
+									<img class="main-block__tpic" alt="zimmer picture" fetchpriority="high" width="462" height="330" src="<?php the_field( 'zimmer_block_image' ); ?>">
 								</a>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'zimmer_block_title' ); ?></h2>
@@ -63,7 +63,7 @@ get_header(); ?>
 								<?php if ( get_field( 'hotel_block_banner_check' ) ) : ?>
 									<div class="banner__circle"><?php the_field( 'hotel_block_banner_content' ); ?></div>
 								<?php endif; ?>
-								<img class="main-block__tpic" alt="hotel picture" loading="lazy" src="<?php the_field( 'hotel_block_image' ); ?>">
+								<img class="main-block__tpic" alt="hotel picture" loading="lazy" width="462" height="330" src="<?php the_field( 'hotel_block_image' ); ?>">
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'hotel_block_title' ); ?></h2>
 									<p class="main-block__text"><?php the_field( 'hotel_block_text' ); ?></p>
@@ -78,7 +78,7 @@ get_header(); ?>
 									<div class="banner__circle"><?php the_field( 'offers_block_banner_content' ); ?></div>
 								<?php endif; ?>
 								<a href="<?php the_field( 'offers_block_details_button_link' ); ?>">
-									<img class="main-block__tpic" alt="offers picture" loading="lazy" src="<?php the_field( 'offers_block_image' ); ?>">
+									<img class="main-block__tpic" alt="offers picture" loading="lazy" width="462" height="330" src="<?php the_field( 'offers_block_image' ); ?>">
 								</a>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'offers_block_title' ); ?></h2>
@@ -95,7 +95,7 @@ get_header(); ?>
 									<div class="banner__circle"><?php the_field( 'resturant_block_banner_content' ); ?></div>
 								<?php endif; ?>
 								<a href="<?php the_field( 'restaurant_block_details_button_link' ); ?>">
-									<img class="main-block__tpic" alt="restaurant picture" loading="lazy" src="<?php the_field( 'restaurant_block_image' ); ?>">
+									<img class="main-block__tpic" alt="restaurant picture" loading="lazy" width="462" height="330" src="<?php the_field( 'restaurant_block_image' ); ?>">
 								</a>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_field( 'restaurant_block_title' ); ?></h2>
