@@ -40,24 +40,35 @@ function kreuzbern_setup() {
 if ( ! function_exists( 'kreuz_preload_webfonts' ) ) :
 
 	/**
-	 * Preloads the main web font to improve performance.
-	 *
-	 * Only the main web font (font-style: normal) is preloaded here since that font is always relevant (it is used
-	 * on every heading, for example). The other font is only needed if there is any applicable content in italic style,
-	 * and therefore preloading it would in most cases regress performance when that font would otherwise not be loaded
-	 * at all.
-	 *
+	 * Preloads the main web fonts to improve performance.
 	 */
 	function kreuz_preload_webfonts() {
 		?>
-		<!--<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( '/assets/fonts/GT-Sectra-Fine-Bold.woff' ) ); ?>" as="font" type="font/woff" crossorigin>-->
-		<!--<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( '/assets/fonts/GT-Walsheim-Thin.woff' ) ); ?>" as="font" type="font/woff" crossorigin>-->
+		<link rel="preload" href="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/fonts/GT-Sectra-Fine-Bold.woff' ); ?>" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/fonts/GT-Walsheim-Thin.woff' ); ?>" as="font" type="font/woff" crossorigin>
 		<?php
 	}
 
 endif;
 
-//add_action( 'wp_head', 'kreuz_preload_webfonts' );
+add_action( 'wp_head', 'kreuz_preload_webfonts', 2 );
+
+/**
+ * Add preconnect/dns-prefetch for key external domains.
+ */
+function kreuz_resource_hints( $urls, $relation_type ) {
+	if ( 'preconnect' === $relation_type ) {
+		$urls[] = array( 'href' => 'https://www.googletagmanager.com' );
+		$urls[] = array( 'href' => 'https://www.google-analytics.com' );
+		$urls[] = array( 'href' => 'https://www.thehotelsnetwork.com' );
+		$urls[] = array( 'href' => 'https://www.simplebooking.it' );
+	}
+	if ( 'dns-prefetch' === $relation_type ) {
+		$urls[] = 'https://tracking.globonet.ch';
+	}
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'kreuz_resource_hints', 10, 2 );
 
 // Enqueue styles and scripts
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
@@ -70,7 +81,8 @@ function theme_enqueue_styles() {
 		wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array( 'swiper-styles' ), $theme_version );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
-		wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array( 'jquery' ), $theme_version, false );
+		wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array(), $theme_version, true );
+		wp_script_add_data( 'hotels-network', 'defer', true );
 		if ( is_page_template( array( 'page-templates/page-attractions.php', 'page-templates/page-contacts.php' ) ) ) :
 			wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBAZN5TfX1aWmjodZ4e_6sOcaJV4D59jfo&callback=Function.prototype', array(), $theme_version, false );
 			wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/dist/google-maps.js', array( 'jquery' ), $theme_version, false );
@@ -103,8 +115,8 @@ if ( is_page_template( array( 'page-templates/page-attractions.php', 'page-templ
 	add_action( 'acf/init', 'my_acf_init' );
 endif;
 
-// Theme otimizations.
-//require get_template_directory() . '/inc/theme-optimizations.php';
+// Theme optimizations.
+require get_template_directory() . '/inc/theme-optimizations.php';
 
 // Theme custom template tags.
 require get_template_directory() . '/inc/theme-template-tags.php';

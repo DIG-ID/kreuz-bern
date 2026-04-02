@@ -11,21 +11,8 @@ function kreuz_disable_self_pingbacks( &$links ) {
 
 add_action( 'pre_ping', 'kreuz_disable_self_pingbacks' );
 
-/**
- * Remove Query Strings
- */
-function remove_query_strings() {
-	if ( ! is_admin() ) {
-			add_filter( 'script_loader_src', 'remove_query_strings_split', 15 );
-			add_filter( 'style_loader_src', 'remove_query_strings_split', 15 );
-	}
-}
-
-function remove_query_strings_split( $src ) {
-	$output = preg_split("/(&ver|\?ver)/", $src);
-	return $output[0];
-}
-add_action( 'init', 'remove_query_strings' );
+// Note: "Remove Query Strings" is intentionally omitted — WP Rocket handles this
+// and a custom implementation conflicts with its cache busting.
 
 /**
  * Disable embeds
@@ -35,6 +22,38 @@ function my_deregister_scripts() {
 }
 
 add_action( 'wp_footer', 'my_deregister_scripts' );
+
+/**
+ * Remove unused WordPress <head> links
+ */
+function kreuz_clean_head() {
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'wp_generator' );
+	remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10 );
+	remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+	remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 );
+	remove_action( 'template_redirect', 'rest_output_link_header', 11 );
+}
+add_action( 'init', 'kreuz_clean_head' );
+
+/**
+ * Dequeue unused frontend styles
+ * Safe for this theme — pages use ACF fields, not Gutenberg blocks.
+ */
+function kreuz_dequeue_unused_styles() {
+	if ( is_admin() ) {
+		return;
+	}
+	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+	wp_dequeue_style( 'global-styles' );
+	wp_dequeue_style( 'classic-theme-styles' );
+	// Dashicons — remove on frontend if no plugin requires it
+	wp_dequeue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'kreuz_dequeue_unused_styles', 100 );
 
 
 /**
