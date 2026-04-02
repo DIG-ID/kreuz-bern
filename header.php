@@ -68,6 +68,7 @@
 
 	<body <?php body_class(); ?>>
 	<?php do_action( 'wp_body_open' ); ?>
+	<a class="skip-link" href="#main"><?php esc_html_e( 'Skip to main content', 'kreuz-bern' ); ?></a>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6NMG4G6"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
