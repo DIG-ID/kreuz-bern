@@ -37,22 +37,6 @@ function kreuzbern_setup() {
 
 }
 
-if ( ! function_exists( 'kreuz_preload_webfonts' ) ) :
-
-	/**
-	 * Preloads the main web fonts to improve performance.
-	 */
-	function kreuz_preload_webfonts() {
-		?>
-		<link rel="preload" href="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/fonts/GT-Sectra-Fine-Bold.woff' ); ?>" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/fonts/GT-Walsheim-Thin.woff' ); ?>" as="font" type="font/woff" crossorigin>
-		<?php
-	}
-
-endif;
-
-add_action( 'wp_head', 'kreuz_preload_webfonts', 2 );
-
 /**
  * Add preconnect/dns-prefetch for key external domains.
  */
