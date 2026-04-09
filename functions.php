@@ -59,8 +59,8 @@ function theme_enqueue_styles() {
 		wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array( 'swiper-styles' ), $theme_version );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
-		wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array(), $theme_version, true );
-		wp_script_add_data( 'hotels-network', 'defer', true );
+		//wp_enqueue_script( 'hotels-network', 'https://www.thehotelsnetwork.com/js/loader.js?property_id=1035300&account_key=668E52580FD704ACA0928FDBBD450775', array(), $theme_version, true );
+		//wp_script_add_data( 'hotels-network', 'defer', true );
 		if ( is_page_template( array( 'page-templates/page-attractions.php', 'page-templates/page-contacts.php' ) ) ) :
 			wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBAZN5TfX1aWmjodZ4e_6sOcaJV4D59jfo&callback=Function.prototype', array(), $theme_version, false );
 			wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/dist/google-maps.js', array( 'jquery' ), $theme_version, false );
