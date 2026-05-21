@@ -13,10 +13,10 @@ if ( $faq_groups ) :
 		foreach ( $group['faq_items'] as $item ) :
 			$schema_items[] = array(
 				'@type' => 'Question',
-				'name'  => $item['question'],
+				'name'  => wp_strip_all_tags( $item['question'] ),
 				'acceptedAnswer' => array(
 					'@type' => 'Answer',
-					'text'  => $item['answer'],
+					'text'  => wp_strip_all_tags( $item['answer'] ),
 				),
 			);
 		endforeach;
@@ -45,12 +45,12 @@ get_header(); ?>
 									<?php foreach ( $faq_groups as $group ) : ?>
 										<div class="faq__group">
 											<?php if ( $group['title'] ) : ?>
-												<h2 class="faq__group-title"><?php echo esc_html( $group['title'] ); ?></h2>
+												<h2 class="faq__group-title"><?php echo wp_kses_post( $group['title'] ); ?></h2>
 											<?php endif; ?>
 											<?php foreach ( $group['faq_items'] as $item ) : ?>
 												<div class="faq__item">
-													<p class="faq__question"><strong><?php echo esc_html( $item['question'] ); ?></strong></p>
-													<div class="faq__answer"><?php echo nl2br( esc_html( $item['answer'] ) ); ?></div>
+													<p class="faq__question"><strong><?php echo wp_kses_post( $item['question'] ); ?></strong></p>
+													<div class="faq__answer"><?php echo wp_kses_post( $item['answer'] ); ?></div>
 												</div>
 											<?php endforeach; ?>
 										</div>
