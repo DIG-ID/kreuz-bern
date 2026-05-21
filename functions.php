@@ -35,6 +35,8 @@ function kreuzbern_setup() {
 
 	add_image_size( 'gallery-thumbnail-image', 465, 300, array( 'center', 'center' ) );
 
+	add_image_size( 'nachhaltigkeit-thumbnail', 932, 660, array( 'center', 'center' ) );
+
 }
 
 /**
