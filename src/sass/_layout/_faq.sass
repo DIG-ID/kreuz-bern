@@ -2,6 +2,12 @@
   @media (min-width: $xl)
     max-width: 75%
 
+  &__group
+    & + &
+      margin-top: 32px
+      @media (min-width: $xl)
+        margin-top: 64px
+
   &__item
 
     &:last-child

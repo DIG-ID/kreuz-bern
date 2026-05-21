@@ -5,19 +5,21 @@
  * The template for displaying the FAQ page with schema markup
  */
 
-$faq_items = get_field( 'faq_items' );
+$faq_groups = get_field( 'faq_groups' );
 
-if ( $faq_items ) :
+if ( $faq_groups ) :
 	$schema_items = array();
-	foreach ( $faq_items as $item ) :
-		$schema_items[] = array(
-			'@type' => 'Question',
-			'name'  => $item['question'],
-			'acceptedAnswer' => array(
-				'@type' => 'Answer',
-				'text'  => $item['answer'],
-			),
-		);
+	foreach ( $faq_groups as $group ) :
+		foreach ( $group['faq_items'] as $item ) :
+			$schema_items[] = array(
+				'@type' => 'Question',
+				'name'  => $item['question'],
+				'acceptedAnswer' => array(
+					'@type' => 'Answer',
+					'text'  => $item['answer'],
+				),
+			);
+		endforeach;
 	endforeach;
 
 	$schema = array(
@@ -38,13 +40,19 @@ get_header(); ?>
 				<div class="col-12">
 					<article class="block-image block-image--wide">
 						<div class="block-image__content">
-							<h1 class="block-image__title"><?php the_title(); ?></h1>
-							<?php if ( $faq_items ) : ?>
+							<?php if ( $faq_groups ) : ?>
 								<div class="faq">
-									<?php foreach ( $faq_items as $item ) : ?>
-										<div class="faq__item">
-											<p class="faq__question"><strong><?php echo esc_html( $item['question'] ); ?></strong></p>
-											<div class="faq__answer"><?php echo nl2br( esc_html( $item['answer'] ) ); ?></div>
+									<?php foreach ( $faq_groups as $group ) : ?>
+										<div class="faq__group">
+											<?php if ( $group['title'] ) : ?>
+												<h2 class="faq__group-title"><?php echo esc_html( $group['title'] ); ?></h2>
+											<?php endif; ?>
+											<?php foreach ( $group['faq_items'] as $item ) : ?>
+												<div class="faq__item">
+													<p class="faq__question"><strong><?php echo esc_html( $item['question'] ); ?></strong></p>
+													<div class="faq__answer"><?php echo nl2br( esc_html( $item['answer'] ) ); ?></div>
+												</div>
+											<?php endforeach; ?>
 										</div>
 									<?php endforeach; ?>
 								</div>
