@@ -1,0 +1,24 @@
+.faq
+  @media (min-width: $xl)
+    max-width: 75%
+
+  &__item
+
+    &:last-child
+      .faq__answer
+        margin-bottom: 0
+
+  &__question,
+  &__answer
+    font-family: $primary-font
+    font-size: 13.6px
+    hyphens: auto
+    letter-spacing: 0.05em
+    line-height: 19.5px
+
+  &__question
+    font-size: 16px !important
+    margin-bottom: 6px !important
+
+  &__answer
+    margin-bottom: 32px !important

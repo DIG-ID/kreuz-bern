@@ -1,0 +1,64 @@
+<?php
+/**
+ * Template Name: FAQ Page Template
+ *
+ * The template for displaying the FAQ page with schema markup
+ */
+
+$faq_items = get_field( 'faq_items' );
+
+if ( $faq_items ) :
+	$schema_items = array();
+	foreach ( $faq_items as $item ) :
+		$schema_items[] = array(
+			'@type' => 'Question',
+			'name'  => $item['question'],
+			'acceptedAnswer' => array(
+				'@type' => 'Answer',
+				'text'  => $item['answer'],
+			),
+		);
+	endforeach;
+
+	$schema = array(
+		'@context'   => 'https://schema.org',
+		'@type'      => 'FAQPage',
+		'mainEntity' => $schema_items,
+	);
+
+	add_action( 'wp_head', function() use ( $schema ) {
+		echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>';
+	} );
+endif;
+
+get_header(); ?>
+	<?php do_action( 'wrapper_open' ); ?>
+		<?php do_action( 'before_main_content' ); ?>
+			<div class="row">
+				<div class="col-12">
+					<article class="block-image block-image--wide">
+						<div class="block-image__content">
+							<h1 class="block-image__title"><?php the_title(); ?></h1>
+							<?php if ( $faq_items ) : ?>
+								<div class="faq">
+									<?php foreach ( $faq_items as $item ) : ?>
+										<div class="faq__item">
+											<p class="faq__question"><strong><?php echo esc_html( $item['question'] ); ?></strong></p>
+											<div class="faq__answer"><?php echo nl2br( esc_html( $item['answer'] ) ); ?></div>
+										</div>
+									<?php endforeach; ?>
+								</div>
+							<?php endif; ?>
+						</div>
+					</article>
+				</div>
+			</div><!-- .row -->
+		<?php do_action( 'after_main_content' ); ?>
+
+		<?php do_action( 'before_main_sidebar' ); ?>
+			<?php get_template_part( 'template-parts/sidebar-blocks' ); ?>
+		<?php do_action( 'after_main_sidebar' ); ?>
+
+	<?php do_action( 'wrapper_close' ); ?>
+
+<?php get_footer();
